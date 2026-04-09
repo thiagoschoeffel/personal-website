@@ -1,0 +1,2158 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- SEO primário -->
+        <title>
+            Thiago Schoeffel | Full-Stack Developer — .NET, PHP &amp; Vue 3
+        </title>
+        <meta
+            name="description"
+            content="Portfólio de Thiago Schoeffel, Full-Stack Developer com mais de 15 anos de experiência em .NET, PHP, Vue 3 e JavaScript. Disponível para projetos, parcerias e oportunidades."
+        />
+        <meta name="author" content="Thiago Schoeffel" />
+        <meta name="robots" content="index, follow" />
+        <meta
+            name="keywords"
+            content="full-stack developer, desenvolvedor full-stack, .NET, PHP, Vue 3, JavaScript, Docker, Kubernetes, Azure, PostgreSQL, MySQL, desenvolvedor web, Santa Catarina, Thiago Schoeffel"
+        />
+        <meta name="geo.region" content="BR-SC" />
+        <meta name="theme-color" content="#581c87" />
+
+        <!-- Canonical — atualize com a URL real do site -->
+        <link rel="canonical" href="https://thiagoschoeffel.com" />
+
+        <!-- Open Graph / redes sociais — atualize og:url e og:image com os valores reais -->
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:url" content="https://thiagoschoeffel.com" />
+        <meta
+            property="og:title"
+            content="Thiago Schoeffel | Full-Stack Developer"
+        />
+        <meta
+            property="og:description"
+            content="Full-Stack Developer com mais de 15 anos de experiência em .NET, PHP e Vue 3. Soluções web robustas, escaláveis e de alto desempenho."
+        />
+        <meta
+            property="og:image"
+            content="https://thiagoschoeffel.com/images/profile-500.webp"
+        />
+        <meta property="og:image:width" content="500" />
+        <meta property="og:image:height" content="500" />
+        <meta
+            property="og:image:alt"
+            content="Foto de Thiago Schoeffel, Full-Stack Developer"
+        />
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary" />
+        <meta
+            name="twitter:title"
+            content="Thiago Schoeffel | Full-Stack Developer"
+        />
+        <meta
+            name="twitter:description"
+            content="Full-Stack Developer com mais de 15 anos de experiência em .NET, PHP e Vue 3."
+        />
+        <meta
+            name="twitter:image"
+            content="https://thiagoschoeffel.com/images/profile-500.webp"
+        />
+
+        <!-- Favicons -->
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="favicon-16x16.png"
+        />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Tailwind CSS via CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+        <!-- Dados estruturados: Person schema — atualize url e image com os valores reais -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Thiago Schoeffel",
+                "jobTitle": "Full-Stack Developer",
+                "description": "Full-Stack Developer com mais de 15 anos de experiência em .NET, PHP, Vue 3 e JavaScript. Especializado em soluções web escaláveis, APIs RESTful e sistemas de alto desempenho.",
+                "url": "https://thiagoschoeffel.com",
+                "image": "https://thiagoschoeffel.com/images/profile-500.webp",
+                "sameAs": [
+                    "https://www.linkedin.com/in/thiagoschoeffel",
+                    "https://github.com/thiagoschoeffel"
+                ],
+                "knowsAbout": [
+                    ".NET",
+                    ".NET Framework",
+                    "PHP",
+                    "Vue 3",
+                    "JavaScript",
+                    "PostgreSQL",
+                    "PostGIS",
+                    "Docker",
+                    "Kubernetes",
+                    "Azure DevOps",
+                    "Azure LogicApps",
+                    "MySQL",
+                    "CodeIgniter",
+                    "Laravel"
+                ],
+                "hasCredential": {
+                    "@type": "EducationalOccupationalCredential",
+                    "credentialCategory": "degree",
+                    "name": "Tecnólogo em Web Design e Programação",
+                    "recognizedBy": {
+                        "@type": "CollegeOrUniversity",
+                        "name": "Universidade do Sul de Santa Catarina (UNISUL)"
+                    }
+                },
+                "worksFor": {
+                    "@type": "Organization",
+                    "name": "Agrotools"
+                },
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressRegion": "Santa Catarina",
+                    "addressCountry": "BR"
+                }
+            }
+        </script>
+
+        <style type="text/tailwindcss">
+            @layer base {
+                html {
+                    font-family:
+                        "Montserrat",
+                        ui-sans-serif,
+                        system-ui,
+                        -apple-system,
+                        Segoe UI,
+                        Roboto,
+                        Noto Sans,
+                        Ubuntu,
+                        Cantarell,
+                        "Helvetica Neue",
+                        Arial,
+                        "Apple Color Emoji",
+                        "Segoe UI Emoji",
+                        "Segoe UI Symbol",
+                        "Noto Color Emoji";
+                    scroll-behavior: smooth;
+                }
+            }
+
+            @layer utilities {
+                .nav-active {
+                    @apply font-bold text-violet-800;
+                }
+            }
+
+            dialog::backdrop {
+                background: rgba(0, 0, 0, 0.6);
+                backdrop-filter: blur(4px);
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+                html {
+                    scroll-behavior: auto;
+                }
+                *,
+                *::before,
+                *::after {
+                    animation-duration: 0.01ms !important;
+                    transition-duration: 0.01ms !important;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Pular para o conteúdo (acessibilidade) -->
+        <a
+            href="#conteudo-principal"
+            class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[200] focus:px-4 focus:py-2 focus:bg-violet-800 focus:text-white focus:rounded-md focus:font-semibold focus:shadow-lg"
+        >
+            Pular para o conteúdo
+        </a>
+
+        <!-- ===== HEADER ===== -->
+        <header class="sticky top-0 z-50 bg-gray-200">
+            <div class="w-full max-w-6xl mx-auto px-4">
+                <nav
+                    aria-label="Navegação principal"
+                    class="h-16 flex items-center justify-between"
+                >
+                    <div class="flex items-center gap-4">
+                        <button
+                            id="navToggle"
+                            class="sm:hidden p-2 -mr-2 cursor-pointer"
+                            aria-expanded="false"
+                            aria-controls="mobileNav"
+                            aria-label="Abrir menu"
+                        >
+                            <svg
+                                id="iconMenu"
+                                class="w-7 h-7 text-gray-700"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                            >
+                                <line x1="3" y1="6" x2="21" y2="6" />
+                                <line x1="3" y1="12" x2="21" y2="12" />
+                                <line x1="3" y1="18" x2="21" y2="18" />
+                            </svg>
+                            <svg
+                                id="iconClose"
+                                class="w-7 h-7 text-gray-700 hidden"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                            >
+                                <line x1="18" y1="6" x2="6" y2="18" />
+                                <line x1="6" y1="6" x2="18" y2="18" />
+                            </svg>
+                        </button>
+                        <a
+                            href="#"
+                            data-scroll-top
+                            class="flex items-center gap-2"
+                        >
+                            <span
+                                class="text-xl font-bold text-gray-600 tracking-tight"
+                                >Thiago Schoeffel</span
+                            >
+                        </a>
+                    </div>
+
+                    <ul class="hidden sm:flex items-center gap-6">
+                        <li>
+                            <a
+                                href="#"
+                                data-scroll-top
+                                data-section="inicio"
+                                class="nav-link text-lg text-gray-600"
+                                >Início</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#sobre"
+                                class="nav-link text-lg text-gray-600"
+                                data-section="sobre"
+                                >Sobre</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#contato"
+                                class="nav-link text-lg text-gray-600"
+                                data-section="contato"
+                                >Contato</a
+                            >
+                        </li>
+                    </ul>
+
+                    <div class="flex items-center gap-4">
+                        <a
+                            href="https://linkedin.com/in/thiagoschoeffel"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn"
+                        >
+                            <svg
+                                class="w-6 h-6 text-gray-600"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                                />
+                            </svg>
+                        </a>
+                        <a
+                            href="https://github.com/thiagoschoeffel"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub"
+                        >
+                            <svg
+                                class="w-6 h-6 text-gray-600"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Mobile nav -->
+            <nav
+                id="mobileNav"
+                aria-label="Menu mobile"
+                class="sm:hidden hidden border-t border-gray-300 bg-gray-200"
+            >
+                <div class="w-full max-w-6xl mx-auto px-4 py-3">
+                    <ul class="flex flex-col gap-3">
+                        <li>
+                            <a
+                                href="#"
+                                data-scroll-top
+                                data-section="inicio"
+                                class="mobile-nav-link block py-2 text-lg text-gray-700"
+                                >Início</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#sobre"
+                                class="mobile-nav-link block py-2 text-lg text-gray-700"
+                                data-section="sobre"
+                                >Sobre</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#contato"
+                                class="mobile-nav-link block py-2 text-lg text-gray-700"
+                                data-section="contato"
+                                >Contato</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main id="conteudo-principal" tabindex="-1">
+            <!-- ===== HERO / INÍCIO ===== -->
+            <section
+                id="inicio"
+                class="relative isolate w-full h-[calc(100dvh-4rem)] flex items-center"
+            >
+                <div
+                    class="absolute inset-0 h-full bg-gradient-to-br from-purple-900 to-blue-900 -z-10"
+                ></div>
+                <div class="w-full max-w-6xl mx-auto px-4 py-8">
+                    <h1
+                        class="relative z-10 mb-2 text-5xl sm:text-7xl font-bold text-white tracking-tight"
+                    >
+                        Full-Stack Developer
+                    </h1>
+                    <p class="text-lg sm:text-2xl text-white tracking-light">
+                        Soluções web completas com
+                        <span
+                            data-typer
+                            data-words='[".NET","PHP","Vue 3"]'
+                            data-type-speed="80"
+                            data-delete-speed="50"
+                            data-hold="1200"
+                            aria-live="polite"
+                            class="relative after:content-['|'] after:ml-1 after:animate-pulse font-bold"
+                        ></span>
+                    </p>
+                </div>
+            </section>
+
+            <!-- ===== SOBRE ===== -->
+            <section id="sobre" class="relative isolate w-full scroll-mt-16">
+                <div class="absolute inset-0 bg-gray-800 -z-10"></div>
+                <div class="w-full max-w-6xl mx-auto px-4 py-24">
+                    <div
+                        class="sm:grid sm:grid-cols-[250px_1fr] sm:gap-12 sm:items-center"
+                    >
+                        <div class="mb-12 sm:mb-0">
+                            <img
+                                src="images/profile-250.webp"
+                                srcset="
+                                    images/profile-250.webp   250w,
+                                    images/profile-500.webp   500w,
+                                    images/profile-1000.webp 1000w
+                                "
+                                sizes="250px"
+                                alt="Foto de perfil de Thiago Schoeffel"
+                                class="w-full max-w-[250px] rounded-full border-8 border-gray-200 object-cover mx-auto sm:mx-0"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                        </div>
+                        <div class="text-center sm:text-left">
+                            <h2
+                                class="relative z-10 text-6xl font-bold text-gray-200 tracking-tight mb-4"
+                            >
+                                Sobre
+                            </h2>
+                            <p
+                                class="leading-8 font-normal text-xl text-gray-200"
+                            >
+                                Desde 2008, desenvolvendo soluções de software
+                                com foco em
+                                <mark
+                                    class="inline-block py-0 px-3 rounded-full font-semibold text-gray-600 bg-gray-200"
+                                    >qualidade</mark
+                                >,
+                                <mark
+                                    class="inline-block py-0 px-3 rounded-full font-semibold text-gray-600 bg-gray-200"
+                                    >confiabilidade</mark
+                                >
+                                e
+                                <mark
+                                    class="inline-block py-0 px-3 rounded-full font-semibold text-gray-600 bg-gray-200"
+                                    >evolução</mark
+                                >
+                                constante. Iniciei minha trajetória com websites
+                                e, ao longo dos anos, expandi minha atuação para
+                                diferentes áreas da tecnologia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== OBJETIVOS PROFISSIONAIS ===== -->
+            <section>
+                <div class="w-full max-w-6xl mx-auto px-4 py-24">
+                    <h2
+                        class="mb-4 text-4xl font-bold text-gray-600 tracking-tight"
+                    >
+                        Meus objetivos profissionais
+                    </h2>
+                    <p class="leading-8 text-lg text-gray-600 tracking-tight">
+                        Contribuir com projetos de desenvolvimento de software
+                        orientados à inovação e melhoria contínua, buscando
+                        sempre entregar soluções estáveis, eficientes e de
+                        qualidade.
+                    </p>
+                </div>
+            </section>
+
+            <!-- ===== EXPERIÊNCIA PROFISSIONAL ===== -->
+            <section id="experiencia" class="bg-gray-800">
+                <div class="w-full max-w-6xl mx-auto px-4 py-24">
+                    <h2
+                        class="text-4xl font-bold text-gray-200 tracking-tight pl-4 border-l-[10px] border-purple-900"
+                    >
+                        Experiência profissional
+                    </h2>
+
+                    <!-- Agrotools -->
+                    <article
+                        class="sm:grid sm:grid-cols-[150px_1fr] sm:gap-12 py-12 my-12 border-b-2 border-gray-700"
+                    >
+                        <div
+                            class="w-[150px] h-[150px] rounded-lg overflow-hidden mx-auto mb-12 sm:m-0"
+                        >
+                            <img
+                                src="images/companies/agrotools-150.webp"
+                                srcset="
+                                    images/companies/agrotools-150.webp 150w,
+                                    images/companies/agrotools-300.webp 300w,
+                                    images/companies/agrotools-600.webp 600w
+                                "
+                                sizes="150px"
+                                alt="Agrotools"
+                                class="block w-full max-w-[150px] h-full object-cover"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="min-w-0">
+                            <h3
+                                class="text-gray-200 text-2xl font-semibold tracking-tight mb-1"
+                            >
+                                Desenvolvedor de Software Pleno Full-Stack
+                            </h3>
+                            <p class="flex items-center gap-2 mb-4">
+                                <span
+                                    class="inline-block text-gray-200 text-lg font-semibold tracking-tight"
+                                    >Agrotools</span
+                                >
+                                <span
+                                    class="inline-block text-gray-200 tracking-tight"
+                                    >&centerdot; 25/03/2021 – Atualmente (<span
+                                        id="agrotools-duration"
+                                    ></span
+                                    >)</span
+                                >
+                            </p>
+                            <p
+                                class="leading-8 text-gray-200 tracking-tight mb-4"
+                            >
+                                Atuação no desenvolvimento de aplicações
+                                voltadas ao agronegócio, com foco em soluções
+                                robustas, escaláveis e baseadas em arquitetura
+                                moderna.
+                            </p>
+                            <ul class="list-disc pl-8 space-y-2 mb-4">
+                                <li
+                                    class="leading-8 text-gray-200 tracking-tight"
+                                >
+                                    Desenvolvimento de sistemas com
+                                    <span class="border-b-4 border-purple-900"
+                                        >.NET</span
+                                    >
+                                    e
+                                    <span class="border-b-4 border-purple-900"
+                                        >.NET Framework</span
+                                    >, criando soluções integradas e de alta
+                                    performance;
+                                </li>
+                                <li
+                                    class="leading-8 text-gray-200 tracking-tight"
+                                >
+                                    Criação e manutenção de
+                                    <span class="border-b-4 border-purple-900"
+                                        >APIs RESTful</span
+                                    >
+                                    e interfaces modernas utilizando
+                                    <span class="border-b-4 border-purple-900"
+                                        >JavaScript</span
+                                    >
+                                    e
+                                    <span class="border-b-4 border-purple-900"
+                                        >Vue 3</span
+                                    >;
+                                </li>
+                                <li
+                                    class="leading-8 text-gray-200 tracking-tight"
+                                >
+                                    Definição e ajustes em pipelines de
+                                    <span class="border-b-4 border-purple-900"
+                                        >CI/CD</span
+                                    >
+                                    com
+                                    <span class="border-b-4 border-purple-900"
+                                        >Azure DevOps</span
+                                    >, automatizando o ciclo de entrega;
+                                </li>
+                                <li
+                                    class="leading-8 text-gray-200 tracking-tight"
+                                >
+                                    Construção e manutenção de rotinas com
+                                    <span class="border-b-4 border-purple-900"
+                                        >Azure LogicApps</span
+                                    >, integrando processos e serviços;
+                                </li>
+                                <li
+                                    class="leading-8 text-gray-200 tracking-tight"
+                                >
+                                    Uso extensivo de
+                                    <span class="border-b-4 border-purple-900"
+                                        >PostgreSQL</span
+                                    >
+                                    com extensão
+                                    <span class="border-b-4 border-purple-900"
+                                        >PostGIS</span
+                                    >
+                                    para manipulação de dados geoespaciais
+                                    aplicados a análises territoriais;
+                                </li>
+                                <li
+                                    class="leading-8 text-gray-200 tracking-tight"
+                                >
+                                    Atuação com
+                                    <span class="border-b-4 border-purple-900"
+                                        >Docker</span
+                                    >
+                                    e
+                                    <span class="border-b-4 border-purple-900"
+                                        >Kubernetes</span
+                                    >
+                                    para criação, empacotamento e orquestração
+                                    de containers em ambientes distribuídos,
+                                    garantindo escalabilidade e consistência no
+                                    ambiente de execução.
+                                </li>
+                            </ul>
+                            <p class="leading-8 text-gray-200 tracking-tight">
+                                Essa experiência tem reforçado minha atuação
+                                como desenvolvedor full stack em projetos com
+                                forte presença de dados geoespaciais, automação,
+                                cloud computing e microsserviços.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Sardo Consultoria -->
+                    <article
+                        class="sm:grid sm:grid-cols-[150px_1fr] sm:gap-12 py-12 my-12 border-b-2 border-gray-700"
+                    >
+                        <div
+                            class="w-[150px] h-[150px] rounded-lg overflow-hidden mx-auto mb-12 sm:m-0"
+                        >
+                            <img
+                                src="images/companies/sardo-150.webp"
+                                srcset="
+                                    images/companies/sardo-150.webp 150w,
+                                    images/companies/sardo-300.webp 300w,
+                                    images/companies/sardo-600.webp 600w
+                                "
+                                sizes="150px"
+                                alt="Sardo Consultoria em TI"
+                                class="block w-full h-full object-cover"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="min-w-0">
+                            <h3
+                                class="text-gray-200 text-2xl font-semibold tracking-tight mb-1"
+                            >
+                                Analista e Desenvolvedor de Sistemas
+                            </h3>
+                            <p class="flex items-center gap-2 mb-4">
+                                <span
+                                    class="inline-block text-gray-200 text-lg font-semibold tracking-tight"
+                                    >Sardo Consultoria em TI</span
+                                >
+                                <span
+                                    class="inline-block text-gray-200 tracking-tight"
+                                    >&centerdot; 10/01/2019 – 31/07/2020 (1 ano
+                                    e 6 meses)</span
+                                >
+                            </p>
+                            <p
+                                class="leading-8 text-gray-200 tracking-tight mb-4"
+                            >
+                                Atuação no desenvolvimento de aplicações
+                                voltadas ao agronegócio, com foco em soluções
+                                robustas, escaláveis e baseadas em arquitetura
+                                moderna.
+                            </p>
+                            <ul class="list-disc pl-8 space-y-2 mb-4">
+                                <li
+                                    class="leading-8 text-gray-200 tracking-tight"
+                                >
+                                    Responsável por parametrizações,
+                                    configurações e suporte aos usuários em
+                                    diversos módulos do
+                                    <span class="border-b-4 border-purple-900"
+                                        >ERP Senior</span
+                                    >, incluindo
+                                    <span class="border-b-4 border-purple-900"
+                                        >faturamento</span
+                                    >,
+                                    <span class="border-b-4 border-purple-900"
+                                        >manufatura</span
+                                    >,
+                                    <span class="border-b-4 border-purple-900"
+                                        >compras</span
+                                    >,
+                                    <span class="border-b-4 border-purple-900"
+                                        >RH</span
+                                    >
+                                    e
+                                    <span class="border-b-4 border-purple-900"
+                                        >contabilidade</span
+                                    >;
+                                </li>
+                                <li
+                                    class="leading-8 text-gray-200 tracking-tight"
+                                >
+                                    Desenvolvimento de módulo personalizado
+                                    dentro do ERP Senior para
+                                    <span class="border-b-4 border-purple-900"
+                                        >gestão do processo de exportações</span
+                                    >
+                                    da empresa, controlando todas as etapas do
+                                    fluxo de exportação;
+                                </li>
+                                <li
+                                    class="leading-8 text-gray-200 tracking-tight"
+                                >
+                                    Apoio direto ao cliente em rotinas fiscais,
+                                    operacionais e administrativas, garantindo
+                                    aderência às regras de negócio por meio de
+                                    ajustes e melhorias no sistema;
+                                </li>
+                                <li
+                                    class="leading-8 text-gray-200 tracking-tight"
+                                >
+                                    Criação de dashboard em
+                                    <span class="border-b-4 border-purple-900"
+                                        >PHP 7.4</span
+                                    >, conectada ao
+                                    <span class="border-b-4 border-purple-900"
+                                        >SQL Server</span
+                                    >
+                                    do ERP, permitindo o monitoramento em tempo
+                                    real da produção e o controle de metas;
+                                </li>
+                                <li
+                                    class="leading-8 text-gray-200 tracking-tight"
+                                >
+                                    Desenvolvimento de sistema para inspeções de
+                                    qualidade no setor madeireiro, com
+                                    <span class="border-b-4 border-purple-900"
+                                        >PHP 7.4</span
+                                    >
+                                    e
+                                    <span class="border-b-4 border-purple-900"
+                                        >MySQL</span
+                                    >, possibilitando o lançamento de fotos e
+                                    medições de amostras em campo.
+                                </li>
+                            </ul>
+                            <p class="leading-8 text-gray-200 tracking-tight">
+                                Essa experiência tem reforçado minha atuação
+                                como desenvolvedor full stack em projetos com
+                                forte presença de dados geoespaciais, automação,
+                                cloud computing e microsserviços.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Isopack -->
+                    <article
+                        class="sm:grid sm:grid-cols-[150px_1fr] sm:gap-12 py-12 my-12 border-b-2 border-gray-700"
+                    >
+                        <div
+                            class="w-[150px] h-[150px] rounded-lg overflow-hidden mx-auto mb-12 sm:m-0"
+                        >
+                            <img
+                                src="images/companies/isopack-150.webp"
+                                srcset="
+                                    images/companies/isopack-150.webp 150w,
+                                    images/companies/isopack-300.webp 300w,
+                                    images/companies/isopack-600.webp 600w
+                                "
+                                sizes="150px"
+                                alt="Isopack Soluções em EPS"
+                                class="block w-full h-full object-cover"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="min-w-0">
+                            <h3
+                                class="text-gray-200 text-2xl font-semibold tracking-tight mb-1"
+                            >
+                                Analista e Desenvolvedor de Sistemas
+                            </h3>
+                            <p class="flex items-center gap-2 mb-4">
+                                <span
+                                    class="inline-block text-gray-200 text-lg font-semibold tracking-tight"
+                                    >Isopack Soluções em EPS</span
+                                >
+                                <span
+                                    class="inline-block text-gray-200 tracking-tight"
+                                    >&centerdot; 01/08/2013 – 14/12/2018 (5 anos
+                                    e 4 meses)</span
+                                >
+                            </p>
+                            <p
+                                class="leading-8 text-gray-200 tracking-tight mb-4"
+                            >
+                                Iniciei na empresa como suporte de TI durante a
+                                implantação de um novo ERP, e com o tempo assumi
+                                responsabilidades mais amplas envolvendo
+                                infraestrutura, desenvolvimento de sistemas e
+                                integração de soluções.
+                            </p>
+                            <ul class="list-disc pl-8 space-y-2 mb-4">
+                                <li
+                                    class="leading-8 text-gray-200 tracking-tight"
+                                >
+                                    Apoio direto à equipe de
+                                    <span class="border-b-4 border-purple-900"
+                                        >implantação do ERP</span
+                                    >, recebendo treinamentos, realizando
+                                    parametrizações iniciais e acompanhando a
+                                    adaptação da empresa ao novo sistema;
+                                </li>
+                                <li
+                                    class="leading-8 text-gray-200 tracking-tight"
+                                >
+                                    Prestação de
+                                    <span class="border-b-4 border-purple-900"
+                                        >suporte técnico aos usuários</span
+                                    >,
+                                    <span class="border-b-4 border-purple-900"
+                                        >manutenção de computadores</span
+                                    >,
+                                    <span class="border-b-4 border-purple-900"
+                                        >rede local</span
+                                    >,
+                                    <span class="border-b-4 border-purple-900"
+                                        >backups</span
+                                    >
+                                    e
+                                    <span class="border-b-4 border-purple-900"
+                                        >gerenciamento da infraestrutura</span
+                                    >
+                                    de TI;
+                                </li>
+                                <li
+                                    class="leading-8 text-gray-200 tracking-tight"
+                                >
+                                    Atuação com servidores
+                                    <span class="border-b-4 border-purple-900"
+                                        >Linux</span
+                                    >
+                                    para hospedagem do ERP, com administração do
+                                    banco de dados
+                                    <span class="border-b-4 border-purple-900"
+                                        >IBM DB2</span
+                                    >;
+                                </li>
+                                <li
+                                    class="leading-8 text-gray-200 tracking-tight"
+                                >
+                                    Desenvolvimento de extensões para o ERP com
+                                    <span class="border-b-4 border-purple-900"
+                                        >PHP (5.6 e 7.4)</span
+                                    >
+                                    e
+                                    <span class="border-b-4 border-purple-900"
+                                        >MySQL</span
+                                    >, suprindo funcionalidades não nativas do
+                                    sistema;
+                                </li>
+                                <li
+                                    class="leading-8 text-gray-200 tracking-tight"
+                                >
+                                    Criação de uma aplicação estilo
+                                    <span class="border-b-4 border-purple-900"
+                                        >CRM</span
+                                    >
+                                    para atendimento ao cliente, desenvolvida em
+                                    <span class="border-b-4 border-purple-900"
+                                        >PHP 5.6</span
+                                    >
+                                    com banco
+                                    <span class="border-b-4 border-purple-900"
+                                        >MySQL</span
+                                    >;
+                                </li>
+                                <li
+                                    class="leading-8 text-gray-200 tracking-tight"
+                                >
+                                    Desenvolvimento de um sistema de gestão da
+                                    produção de EPS, incluindo controle de
+                                    estoque, paradas de máquina, consumo de
+                                    matéria-prima e expedição de produtos,
+                                    utilizando
+                                    <span class="border-b-4 border-purple-900"
+                                        >PHP 7.4</span
+                                    >
+                                    e
+                                    <span class="border-b-4 border-purple-900"
+                                        >MySQL</span
+                                    >.
+                                </li>
+                            </ul>
+                            <p class="leading-8 text-gray-200 tracking-tight">
+                                Essa experiência consolidou minha transição do
+                                suporte técnico para o desenvolvimento de
+                                sistemas, com foco em soluções alinhadas às
+                                necessidades operacionais da empresa.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Luani -->
+                    <article
+                        class="sm:grid sm:grid-cols-[150px_1fr] sm:gap-12 py-12 my-12 border-b-2 border-gray-700"
+                    >
+                        <div
+                            class="w-[150px] h-[150px] rounded-lg overflow-hidden mx-auto mb-12 sm:m-0"
+                        >
+                            <img
+                                src="images/companies/luani-150.webp"
+                                srcset="
+                                    images/companies/luani-150.webp 150w,
+                                    images/companies/luani-300.webp 300w,
+                                    images/companies/luani-600.webp 600w
+                                "
+                                sizes="150px"
+                                alt="Luani Papelaria e Festas"
+                                class="block w-full h-full object-cover"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="min-w-0">
+                            <h3
+                                class="text-gray-200 text-2xl font-semibold tracking-tight mb-1"
+                            >
+                                Auxiliar de Vendas
+                            </h3>
+                            <p class="flex items-center gap-2 mb-4">
+                                <span
+                                    class="inline-block text-gray-200 text-lg font-semibold tracking-tight"
+                                    >Luani Papelaria e Festas</span
+                                >
+                                <span
+                                    class="inline-block text-gray-200 tracking-tight"
+                                    >&centerdot; 08/10/2007 – 31/07/2013 (5 anos
+                                    e 9 meses)</span
+                                >
+                            </p>
+                            <p
+                                class="leading-8 text-gray-200 tracking-tight mb-4"
+                            >
+                                Atuação multifuncional em papelaria e loja de
+                                festas, com envolvimento direto em áreas de
+                                atendimento, estoque, vendas e, principalmente,
+                                nas primeiras interações com tecnologia e
+                                comércio eletrônico — o que despertou meu
+                                interesse por desenvolvimento web.
+                            </p>
+                            <ul class="list-disc pl-8 space-y-2 mb-4">
+                                <li
+                                    class="leading-8 text-gray-200 tracking-tight"
+                                >
+                                    Responsável por atualizar banners e produtos
+                                    no site da empresa por meio de painel de
+                                    controle, ainda na época em que o site
+                                    estava em seu formato institucional;
+                                </li>
+                                <li
+                                    class="leading-8 text-gray-200 tracking-tight"
+                                >
+                                    Apoio no lançamento da
+                                    <span class="border-b-4 border-purple-900"
+                                        >loja virtual</span
+                                    >: cadastro e atualização de produtos,
+                                    gestão de estoque, gerenciamento de pedidos,
+                                    logística de envios e atendimento aos
+                                    clientes;
+                                </li>
+                                <li
+                                    class="leading-8 text-gray-200 tracking-tight"
+                                >
+                                    Criação de blog em
+                                    <span class="border-b-4 border-purple-900"
+                                        >WordPress</span
+                                    >
+                                    para o
+                                    <span class="border-b-4 border-purple-900"
+                                        >e-commerce</span
+                                    >, com produção de conteúdo e integração com
+                                    <span class="border-b-4 border-purple-900"
+                                        >redes sociais (Facebook e
+                                        Twitter)</span
+                                    >;
+                                </li>
+                                <li
+                                    class="leading-8 text-gray-200 tracking-tight"
+                                >
+                                    Atuação no atendimento ao público, vendas
+                                    diretas, organização e reposição de produtos
+                                    nas prateleiras;
+                                </li>
+                                <li
+                                    class="leading-8 text-gray-200 tracking-tight"
+                                >
+                                    Cadastro de produtos no sistema de vendas,
+                                    precificação com base em notas fiscais,
+                                    etiquetagem e controle de estoque físico;
+                                </li>
+                                <li
+                                    class="leading-8 text-gray-200 tracking-tight"
+                                >
+                                    Apoio logístico em entregas aos clientes,
+                                    contribuindo para a operação completa do
+                                    negócio.
+                                </li>
+                            </ul>
+                            <p class="leading-8 text-gray-200 tracking-tight">
+                                Essa experiência foi fundamental para despertar
+                                meu interesse por tecnologia e por compreender
+                                todas as etapas operacionais de uma empresa.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- ===== PROJETOS FREELANCE ===== -->
+            <section id="projetos" class="bg-gray-100">
+                <div class="w-full max-w-6xl mx-auto px-4 py-24">
+                    <h2
+                        class="mb-12 text-4xl font-bold text-gray-600 tracking-tight"
+                    >
+                        Serviços como consultor independente
+                    </h2>
+                    <p class="leading-8 text-gray-600 tracking-tight mb-12">
+                        Atuei em diversos projetos na modalidade freelance,
+                        desenvolvendo soluções personalizadas para parceiros e
+                        pequenos negócios. Os trabalhos incluíram desde websites
+                        institucionais até sistemas web sob demanda, com foco em
+                        qualidade, usabilidade e entrega ágil.
+                    </p>
+                    <div class="md:grid md:grid-cols-2 md:gap-12">
+                        <!-- Business Control -->
+                        <article class="mb-12 md:mb-0">
+                            <h3 class="mb-2">
+                                <button
+                                    data-open-modal="business-control"
+                                    class="font-bold text-2xl text-gray-600 tracking-tight hover:text-violet-800 hover:underline underline-offset-4 cursor-pointer transition-colors"
+                                >
+                                    Business Control
+                                </button>
+                            </h3>
+                            <p
+                                class="font-light text-sm text-gray-500 tracking-tight mb-2 leading-8"
+                            >
+                                ~200h | Skills:
+                                <mark
+                                    class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-purple-400 text-purple-900"
+                                    >PHP</mark
+                                >
+                                <mark
+                                    class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-red-400 text-red-900"
+                                    >CodeIgniter 3</mark
+                                >
+                                <mark
+                                    class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-yellow-300 text-yellow-900"
+                                    >JavaScript</mark
+                                >
+                                <mark
+                                    class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-sky-300 text-sky-900"
+                                    >MySQL</mark
+                                >
+                                <mark
+                                    class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-blue-400 text-blue-900"
+                                    >Docker</mark
+                                >
+                            </p>
+                            <p class="text-gray-600 tracking-tight leading-8">
+                                Sistema para gerenciamento da produção de blocos
+                                e moldados de EPS (poliestireno expandido), com
+                                controle de paradas de máquina e movimentações
+                                de estoque.
+                            </p>
+                        </article>
+
+                        <!-- Fast Delivery -->
+                        <article class="mb-12 md:mb-0">
+                            <h3 class="mb-2">
+                                <button
+                                    data-open-modal="fast-delivery"
+                                    class="font-bold text-2xl text-gray-600 tracking-tight hover:text-violet-800 hover:underline underline-offset-4 cursor-pointer transition-colors"
+                                >
+                                    Fast Delivery
+                                </button>
+                            </h3>
+                            <p
+                                class="font-light text-sm text-gray-500 tracking-tight mb-2 leading-8"
+                            >
+                                ~120h | Skills:
+                                <mark
+                                    class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-purple-400 text-purple-900"
+                                    >PHP</mark
+                                >
+                                <mark
+                                    class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-red-400 text-red-900"
+                                    >CodeIgniter 3</mark
+                                >
+                                <mark
+                                    class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-yellow-300 text-yellow-900"
+                                    >JavaScript</mark
+                                >
+                                <mark
+                                    class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-sky-300 text-sky-900"
+                                    >MySQL</mark
+                                >
+                                <mark
+                                    class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-blue-400 text-blue-900"
+                                    >Docker</mark
+                                >
+                            </p>
+                            <p class="text-gray-600 tracking-tight leading-8">
+                                Sistema de controle de pedidos e produção para
+                                uma empresa de refeições saudáveis. Inclui
+                                funcionalidades para gestão de cozinha,
+                                entregas, clientes, produtos e entregadores.
+                            </p>
+                        </article>
+
+                        <!-- Benefactors -->
+                        <article class="mb-0">
+                            <h3 class="mb-2">
+                                <button
+                                    data-open-modal="benefactors"
+                                    class="font-bold text-2xl text-gray-600 tracking-tight hover:text-violet-800 hover:underline underline-offset-4 cursor-pointer transition-colors"
+                                >
+                                    Benefactors
+                                </button>
+                            </h3>
+                            <p
+                                class="font-light text-sm text-gray-500 tracking-tight mb-2 leading-8"
+                            >
+                                ~80h | Skills:
+                                <mark
+                                    class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-purple-400 text-purple-900"
+                                    >PHP</mark
+                                >
+                                <mark
+                                    class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-orange-500 text-orange-900"
+                                    >Laravel</mark
+                                >
+                                <mark
+                                    class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-green-400 text-green-900"
+                                    >Vue 3</mark
+                                >
+                                <mark
+                                    class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-violet-300 text-violet-700"
+                                    >Inertia.js</mark
+                                >
+                                <mark
+                                    class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-yellow-300 text-yellow-900"
+                                    >JavaScript</mark
+                                >
+                                <mark
+                                    class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-sky-300 text-sky-900"
+                                    >MySQL</mark
+                                >
+                                <mark
+                                    class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-blue-400 text-blue-900"
+                                    >Docker</mark
+                                >
+                            </p>
+                            <p class="text-gray-600 tracking-tight leading-8">
+                                Plataforma para gestão de benfeitores e suas
+                                contribuições a uma casa de formação religiosa.
+                                Controle completo de cadastros, doações e
+                                interações com os doadores.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== EDUCAÇÃO ===== -->
+            <section id="educacao">
+                <div class="w-full max-w-6xl mx-auto px-4 py-24">
+                    <h2
+                        class="mb-4 text-4xl font-bold text-gray-600 tracking-tight"
+                    >
+                        Educação
+                    </h2>
+
+                    <!-- UDESC -->
+                    <article
+                        class="sm:grid sm:grid-cols-[150px_1fr] sm:gap-12 p-12 my-12 border-2 border-gray-100 rounded-xl items-center"
+                    >
+                        <div
+                            class="w-[150px] h-[150px] rounded-lg overflow-hidden mx-auto mb-8 sm:m-0"
+                        >
+                            <img
+                                src="images/education/udesc-150.webp"
+                                srcset="
+                                    images/education/udesc-150.webp 150w,
+                                    images/education/udesc-300.webp 300w,
+                                    images/education/udesc-600.webp 600w
+                                "
+                                sizes="150px"
+                                alt="UDESC - Universidade do Estado de Santa Catarina"
+                                class="block w-full h-full object-cover"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="min-w-0">
+                            <h3
+                                class="text-gray-600 text-2xl font-semibold tracking-tight mb-1"
+                            >
+                                Bacharelado em Sistemas de Informação
+                                <strong>(não concluído)</strong>
+                            </h3>
+                            <p
+                                class="text-gray-500 text-lg font-semibold tracking-tight italic"
+                            >
+                                Universidade do Estado de Santa Catarina (UDESC)
+                            </p>
+                            <p
+                                class="text-gray-500 text-lg tracking-tight italic"
+                            >
+                                Cursado por 3 anos
+                                <strong>(2013 – 2016)</strong>
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- UNISUL -->
+                    <article
+                        class="sm:grid sm:grid-cols-[150px_1fr] sm:gap-12 p-12 border-2 border-gray-100 rounded-xl items-center"
+                    >
+                        <div
+                            class="w-[150px] h-[150px] rounded-lg overflow-hidden mx-auto mb-8 sm:m-0"
+                        >
+                            <img
+                                src="images/education/unisul-150.webp"
+                                srcset="
+                                    images/education/unisul-150.webp 150w,
+                                    images/education/unisul-300.webp 300w,
+                                    images/education/unisul-600.webp 600w
+                                "
+                                sizes="150px"
+                                alt="UNISUL - Universidade do Sul de Santa Catarina"
+                                class="block w-full h-full object-cover"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="min-w-0">
+                            <h3
+                                class="text-gray-600 text-2xl font-semibold tracking-tight mb-1"
+                            >
+                                Tecnólogo em Web Design e Programação
+                            </h3>
+                            <p
+                                class="text-gray-500 text-lg font-semibold tracking-tight italic"
+                            >
+                                Universidade do Sul de Santa Catarina (UNISUL)
+                            </p>
+                            <p
+                                class="text-gray-500 text-lg tracking-tight italic"
+                            >
+                                2009 – 2012 <strong>(3 anos)</strong>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- ===== CONSIDERAÇÕES FINAIS ===== -->
+            <section class="bg-gray-100">
+                <div class="w-full max-w-6xl mx-auto px-4 py-24">
+                    <h2
+                        class="mb-12 text-4xl font-bold text-gray-600 tracking-tight"
+                    >
+                        Considerações finais
+                    </h2>
+                    <ul class="list-disc pl-8 space-y-2 mb-4">
+                        <li class="leading-8 text-gray-600 tracking-tight">
+                            Casado, pai de uma filha
+                        </li>
+                        <li class="leading-8 text-gray-600 tracking-tight">
+                            Fácil aprendizado de novas tecnologias e processos
+                        </li>
+                        <li class="leading-8 text-gray-600 tracking-tight">
+                            Constante aperfeiçoamento profissional
+                        </li>
+                        <li class="leading-8 text-gray-600 tracking-tight">
+                            Sempre disposto a encarar novos desafios
+                        </li>
+                        <li class="leading-8 text-gray-600 tracking-tight">
+                            Autodidata
+                        </li>
+                        <li class="leading-8 text-gray-600 tracking-tight">
+                            Disponível para viagens
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- ===== CONTATO — cabeçalho ===== -->
+            <section id="contato" class="relative isolate w-full scroll-mt-16">
+                <div class="absolute inset-0 bg-violet-800 -z-10"></div>
+                <div class="w-full max-w-6xl mx-auto px-4 py-12">
+                    <h2
+                        class="relative z-10 text-6xl font-bold text-gray-200 tracking-tight mb-4"
+                    >
+                        Contato
+                    </h2>
+                    <p class="leading-8 font-normal text-xl text-gray-200">
+                        Entre em contato para conversar sobre projetos,
+                        parcerias ou oportunidades.
+                    </p>
+                </div>
+            </section>
+
+            <!-- ===== CONTATO — formulário ===== -->
+            <section>
+                <div class="w-full max-w-6xl mx-auto px-4 py-12">
+                    <h2 class="sr-only">Formulário de contato</h2>
+
+                    <!--
+                    Para ativar o envio de e-mail, substitua YOUR_EMAIL pelo seu endereço
+                    real na linha abaixo (ex.: action="https://formsubmit.co/seu@email.com").
+                    O FormSubmit é gratuito e não requer backend.
+                -->
+                    <form
+                        id="contactForm"
+                        action="https://formsubmit.co/b190f7b60b1103bb08db66fe3348c14d"
+                        method="POST"
+                        class="mx-auto"
+                        novalidate
+                    >
+                        <input
+                            type="hidden"
+                            name="_subject"
+                            value="Mensagem de contato pelo site"
+                        />
+                        <input type="hidden" name="_captcha" value="true" />
+                        <input type="hidden" name="_template" value="box" />
+                        <input type="text" name="_honey" style="display:none" />
+
+                        <div
+                            id="formSuccess"
+                            role="alert"
+                            aria-live="polite"
+                            class="hidden mb-6 rounded-md bg-green-100 text-green-800 px-4 py-3"
+                        >
+                            Mensagem enviada com sucesso! Te respondo em breve.
+                        </div>
+                        <div
+                            id="formError"
+                            role="alert"
+                            aria-live="assertive"
+                            class="hidden mb-6 rounded-md bg-red-100 text-red-800 px-4 py-3"
+                        >
+                            Ocorreu um erro ao enviar a mensagem. Por favor,
+                            tente novamente.
+                        </div>
+
+                        <!-- Honeypot anti-spam -->
+                        <div class="hidden" aria-hidden="true">
+                            <label for="website">Seu site</label>
+                            <input
+                                type="text"
+                                id="website"
+                                name="website"
+                                tabindex="-1"
+                                autocomplete="off"
+                            />
+                        </div>
+
+                        <div class="mb-8">
+                            <label
+                                for="name"
+                                class="block font-semibold text-gray-600"
+                                >Nome</label
+                            >
+                            <input
+                                id="name"
+                                type="text"
+                                name="name"
+                                required
+                                autocomplete="name"
+                                class="block w-full rounded-md bg-white/5 px-6 py-4 text-gray-600 outline-1 -outline-offset-1 outline-gray-600/10 placeholder:text-gray-600 focus:outline-2 focus:-outline-offset-2 focus:outline-violet-800"
+                                aria-describedby="name-error"
+                                aria-invalid="false"
+                            />
+                            <span
+                                id="name-error"
+                                class="mt-2 block text-sm text-red-700"
+                                aria-live="assertive"
+                            ></span>
+                        </div>
+                        <div class="mb-8">
+                            <label
+                                for="email"
+                                class="block font-semibold text-gray-600"
+                                >E-mail</label
+                            >
+                            <input
+                                id="email"
+                                type="email"
+                                name="email"
+                                required
+                                autocomplete="email"
+                                class="block w-full rounded-md bg-white/5 px-6 py-4 text-gray-600 outline-1 -outline-offset-1 outline-gray-600/10 placeholder:text-gray-600 focus:outline-2 focus:-outline-offset-2 focus:outline-violet-800"
+                                aria-describedby="email-error"
+                                aria-invalid="false"
+                            />
+                            <span
+                                id="email-error"
+                                class="mt-2 block text-sm text-red-700"
+                                aria-live="assertive"
+                            ></span>
+                        </div>
+                        <div class="mb-8">
+                            <label
+                                for="message"
+                                class="block font-semibold text-gray-600"
+                                >Mensagem</label
+                            >
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="4"
+                                required
+                                autocomplete="off"
+                                class="block w-full rounded-md bg-white/5 px-6 py-4 text-gray-600 outline-1 -outline-offset-1 outline-gray-600/10 placeholder:text-gray-600 focus:outline-2 focus:-outline-offset-2 focus:outline-violet-800"
+                                aria-describedby="message-error"
+                                aria-invalid="false"
+                            ></textarea>
+                            <span
+                                id="message-error"
+                                class="mt-2 block text-sm text-red-700"
+                                aria-live="assertive"
+                            ></span>
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="block w-full rounded-md bg-violet-800 px-6 py-4 cursor-pointer text-center font-semibold text-gray-200 shadow-xs hover:bg-violet-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-800"
+                        >
+                            Enviar mensagem
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- ===== FOOTER ===== -->
+        <footer class="bg-gray-200">
+            <div class="w-full max-w-6xl mx-auto px-4">
+                <div class="h-16 flex items-center justify-center">
+                    <p class="text-sm text-gray-600 text-center">
+                        &copy; <span id="currentYear"></span> Thiago Schoeffel.
+                        Todos os direitos reservados.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- ===== PROJECT MODAL ===== -->
+        <dialog
+            id="projectModal"
+            aria-labelledby="modalName"
+            aria-describedby="modalDescription"
+            class="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-[800px] max-h-[90dvh] overflow-y-auto rounded-xl p-0 bg-white min-w-0 z-50"
+        >
+            <!-- Gradient header -->
+            <div class="relative isolate px-8 py-10">
+                <div
+                    class="absolute inset-0 bg-gradient-to-br from-purple-900 to-blue-900 -z-10 rounded-t-xl"
+                ></div>
+                <button
+                    id="closeModal"
+                    aria-label="Fechar modal"
+                    class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/20 hover:bg-white/35 text-white text-lg flex items-center justify-center cursor-pointer transition-colors"
+                >
+                    <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        class="w-5 h-5"
+                        aria-hidden="true"
+                    >
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg>
+                </button>
+                <h2
+                    id="modalName"
+                    class="text-4xl font-bold text-gray-200 tracking-tight mb-3 pr-12"
+                ></h2>
+                <p
+                    id="modalDescription"
+                    class="text-lg text-gray-200 leading-8"
+                    tabindex="-1"
+                ></p>
+            </div>
+
+            <!-- Gallery: carousel -->
+            <div
+                role="region"
+                aria-label="Galeria de capturas de tela"
+                class="relative w-full overflow-hidden bg-gray-900"
+                style="
+                    aspect-ratio: 16/9;
+                    box-shadow: 0 0 0 1px rgba(209, 213, 219, 0.5);
+                "
+            >
+                <div
+                    id="modalSlideTrack"
+                    class="flex h-full"
+                    aria-live="polite"
+                    aria-atomic="true"
+                    style="
+                        transition: transform 0.4s ease;
+                        will-change: transform;
+                    "
+                ></div>
+                <button
+                    id="prevSlide"
+                    aria-label="Slide anterior"
+                    class="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/20 hover:bg-white/35 text-gray-800 flex items-center justify-center cursor-pointer transition-colors"
+                >
+                    <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="w-5 h-5"
+                        aria-hidden="true"
+                    >
+                        <polyline points="15 18 9 12 15 6" />
+                    </svg>
+                </button>
+                <button
+                    id="nextSlide"
+                    aria-label="Próximo slide"
+                    class="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/20 hover:bg-white/35 text-gray-800 flex items-center justify-center cursor-pointer transition-colors"
+                >
+                    <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="w-5 h-5"
+                        aria-hidden="true"
+                    >
+                        <polyline points="9 18 15 12 9 6" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Disclaimer -->
+            <p
+                class="px-4 sm:px-8 py-5 text-xs text-gray-400 italic text-center"
+            >
+                * Os dados e informações que aparecem nas imagens são apenas
+                para efeitos de demonstração e não condizem com a realidade.
+            </p>
+
+            <!-- Why section -->
+            <div class="bg-gray-100">
+                <div class="px-4 sm:px-8 py-16">
+                    <h3
+                        class="text-3xl font-bold text-gray-600 tracking-tight mb-6"
+                    >
+                        Por quê foi desenvolvido?
+                    </h3>
+                    <div id="modalWhy" class="space-y-4"></div>
+                </div>
+            </div>
+
+            <!-- Technologies -->
+            <div class="px-4 sm:px-8 py-16">
+                <h3
+                    class="text-3xl font-bold text-gray-600 tracking-tight mb-6"
+                >
+                    Tecnologias utilizadas
+                </h3>
+                <p
+                    id="modalTech"
+                    class="tracking-tight leading-8 flex flex-wrap items-center text-sm"
+                ></p>
+            </div>
+        </dialog>
+
+        <script>
+            (() => {
+                // --- Ano atual no footer ---
+                document.getElementById("currentYear").textContent =
+                    new Date().getFullYear();
+
+                // --- Duração dinâmica na Agrotools ---
+                function calcDuration(startStr) {
+                    const [d, m, y] = startStr.split("/").map(Number);
+                    const start = new Date(y, m - 1, d);
+                    const now = new Date();
+                    let anos = now.getFullYear() - start.getFullYear();
+                    let meses = now.getMonth() - start.getMonth();
+                    if (meses < 0) {
+                        anos--;
+                        meses += 12;
+                    }
+                    const partes = [];
+                    if (anos > 0)
+                        partes.push(anos + " " + (anos === 1 ? "ano" : "anos"));
+                    if (meses > 0)
+                        partes.push(
+                            meses + " " + (meses === 1 ? "mês" : "meses"),
+                        );
+                    return partes.length
+                        ? partes.join(" e ")
+                        : "menos de 1 mês";
+                }
+                const durationEl =
+                    document.getElementById("agrotools-duration");
+                if (durationEl)
+                    durationEl.textContent = calcDuration("25/03/2021");
+
+                // --- Typing animation (respects prefers-reduced-motion) ---
+                const prefersReducedMotion = window.matchMedia(
+                    "(prefers-reduced-motion: reduce)",
+                ).matches;
+                const initTyper = (el) => {
+                    const words = (() => {
+                        try {
+                            return JSON.parse(el.dataset.words || "[]");
+                        } catch {
+                            return [];
+                        }
+                    })();
+                    if (!words.length) return;
+                    // Show the first word statically for users who prefer reduced motion
+                    if (prefersReducedMotion) {
+                        el.textContent = words[0];
+                        return;
+                    }
+                    const typeSpeed = Number(el.dataset.typeSpeed ?? 80);
+                    const deleteSpeed = Number(el.dataset.deleteSpeed ?? 50);
+                    const hold = Number(el.dataset.hold ?? 1200);
+                    let i = 0,
+                        idx = 0,
+                        deleting = false;
+                    const tick = () => {
+                        const word = words[i];
+                        if (!deleting) {
+                            el.textContent = word.slice(0, idx + 1);
+                            idx++;
+                            if (idx === word.length) {
+                                deleting = true;
+                                setTimeout(tick, hold);
+                            } else {
+                                setTimeout(tick, typeSpeed);
+                            }
+                        } else {
+                            el.textContent = word.slice(0, idx - 1);
+                            idx--;
+                            if (idx === 0) {
+                                deleting = false;
+                                i = (i + 1) % words.length;
+                                setTimeout(tick, 300);
+                            } else {
+                                setTimeout(tick, deleteSpeed);
+                            }
+                        }
+                    };
+                    tick();
+                };
+                document.querySelectorAll("[data-typer]").forEach(initTyper);
+
+                // --- Mobile menu ---
+                const btn = document.getElementById("navToggle");
+                const panel = document.getElementById("mobileNav");
+                const iconMenu = document.getElementById("iconMenu");
+                const iconClose = document.getElementById("iconClose");
+
+                function closeMenu() {
+                    panel.classList.add("hidden");
+                    btn.setAttribute("aria-expanded", "false");
+                    btn.setAttribute("aria-label", "Abrir menu");
+                    iconMenu.classList.remove("hidden");
+                    iconClose.classList.add("hidden");
+                }
+                function openMenu() {
+                    panel.classList.remove("hidden");
+                    btn.setAttribute("aria-expanded", "true");
+                    btn.setAttribute("aria-label", "Fechar menu");
+                    iconMenu.classList.add("hidden");
+                    iconClose.classList.remove("hidden");
+                }
+
+                btn.addEventListener("click", () => {
+                    btn.getAttribute("aria-expanded") === "true"
+                        ? closeMenu()
+                        : openMenu();
+                });
+                document.addEventListener("keydown", (e) => {
+                    if (e.key === "Escape") closeMenu();
+                });
+                panel.addEventListener("click", (e) => {
+                    if (e.target.closest("a")) closeMenu();
+                });
+                window
+                    .matchMedia("(min-width: 640px)")
+                    .addEventListener("change", (e) => {
+                        if (e.matches) closeMenu();
+                    });
+
+                // --- "Início" links: scroll to absolute top ---
+                document.querySelectorAll("[data-scroll-top]").forEach((el) => {
+                    el.addEventListener("click", (e) => {
+                        e.preventDefault();
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                        // Remove the fragment from the URL
+                        if (window.location.hash) {
+                            history.replaceState(
+                                null,
+                                "",
+                                window.location.pathname +
+                                    window.location.search,
+                            );
+                        }
+                        closeMenu();
+                    });
+                });
+
+                // --- Scroll spy: active nav state ---
+                const allNavLinks = document.querySelectorAll(
+                    ".nav-link, .mobile-nav-link",
+                );
+                const spySections = ["inicio", "sobre", "contato"];
+
+                const observer = new IntersectionObserver(
+                    (entries) => {
+                        entries.forEach((entry) => {
+                            if (!entry.isIntersecting) return;
+                            const id = entry.target.id;
+                            allNavLinks.forEach((link) => {
+                                const active = link.dataset.section === id;
+                                link.classList.toggle("font-bold", active);
+                                link.classList.toggle(
+                                    "text-violet-800",
+                                    active,
+                                );
+                            });
+                        });
+                    },
+                    { rootMargin: "-40% 0px -55% 0px" },
+                );
+
+                spySections.forEach((id) => {
+                    const el = document.getElementById(id);
+                    if (el) observer.observe(el);
+                });
+
+                // --- Contact form: client-side validation feedback ---
+                const contactForm = document.getElementById("contactForm");
+                contactForm.addEventListener("submit", (e) => {
+                    if (contactForm.action.includes("YOUR_EMAIL")) {
+                        e.preventDefault();
+                        document
+                            .getElementById("formError")
+                            .classList.remove("hidden");
+                        document.getElementById("formError").textContent =
+                            "Configure o endereço de e-mail no atributo action do formulário antes de enviar.";
+                    }
+                });
+
+                // =========================================================
+                // --- Project modals ---
+                // =========================================================
+
+                const PROJECTS = {
+                    "business-control": {
+                        name: "Business Control",
+                        description:
+                            "Sistema para gerenciamento da produção de blocos e moldados de EPS (poliestireno expandido), com controle de paradas de máquina e movimentações de estoque.",
+                        gallery: [
+                            {
+                                src: "images/projects/business-control/01.png",
+                                title: "Tela de login",
+                                subtitle:
+                                    "Tela de login do sistema Business Control.",
+                            },
+                            {
+                                src: "images/projects/business-control/02.png",
+                                title: "Dashboard inicial",
+                                subtitle:
+                                    "Dashboard inicial com várias informações resumidas.",
+                            },
+                            {
+                                src: "images/projects/business-control/03.png",
+                                title: "Dashboard com gráficos",
+                                subtitle:
+                                    "Vários gráficos com informações relevantes.",
+                            },
+                            {
+                                src: "images/projects/business-control/04.png",
+                                title: "Dashboard com gráficos",
+                                subtitle:
+                                    "Vários gráficos com informações relevantes.",
+                            },
+                            {
+                                src: "images/projects/business-control/05.png",
+                                title: "Gestão de apontamentos",
+                                subtitle:
+                                    "Tela de gestão dos apontamentos de produção.",
+                            },
+                        ],
+                        why: [
+                            "O Business Control nasceu de uma necessidade operacional real. A empresa utilizava um ERP genérico, que não atendia às particularidades do processo de produção de blocos e moldados de EPS (poliestireno expandido). Os controles mais críticos — como registro de produção, paradas de máquina, lançamentos de estoque e movimentação interna — eram feitos manualmente em planilhas Excel.",
+                            "Esse modelo apresentava vários problemas: falta de rastreabilidade do que estava sendo produzido, dificuldade para enxergar o status atualizado do estoque e pouca visibilidade sobre a produção em andamento. Em outras palavras, a operação diária dependia de controles paralelos, descentralizados e sujeitos a erro humano.",
+                            "O Business Control foi desenvolvido para resolver exatamente isso: substituir o controle manual por um sistema próprio, alinhado ao fluxo real da fábrica. A aplicação passou a centralizar o acompanhamento da produção de blocos e moldados de EPS (poliestireno expandido), registrar movimentações de estoque de forma estruturada e oferecer uma visão clara do que foi produzido, do que está em produção e do que está disponível. Isso trouxe mais controle, mais confiabilidade nos dados e uma base sólida para tomada de decisão.",
+                        ],
+                        technologies: [
+                            ["PHP", "bg-purple-400 text-purple-900"],
+                            ["CodeIgniter 3", "bg-red-400 text-red-900"],
+                            ["JavaScript", "bg-yellow-300 text-yellow-900"],
+                            ["MySQL", "bg-sky-300 text-sky-900"],
+                            ["Docker", "bg-blue-400 text-blue-900"],
+                        ],
+                    },
+                    "fast-delivery": {
+                        name: "Fast Delivery",
+                        description:
+                            "Sistema de controle de pedidos e produção para uma empresa de refeições saudáveis. Inclui funcionalidades para gestão de cozinha, entregas, clientes, produtos e entregadores.",
+                        gallery: [
+                            {
+                                src: "images/projects/fast-delivery/01.png",
+                                title: "Tela de login",
+                                subtitle:
+                                    "Tela de login do sistema Fast Delivery.",
+                            },
+                            {
+                                src: "images/projects/fast-delivery/02.png",
+                                title: "Tela inicial",
+                                subtitle:
+                                    "Dashboard inicial com várias informações resumidas.",
+                            },
+                            {
+                                src: "images/projects/fast-delivery/03.png",
+                                title: "Dashboard de produção",
+                                subtitle:
+                                    "Dashboard de produção com as quantidades que devem ser produzidas.",
+                            },
+                            {
+                                src: "images/projects/fast-delivery/04.png",
+                                title: "Dashboard de embalagem",
+                                subtitle:
+                                    "Dashboard com as refeições prontas para serem embaladas separadas por entregador.",
+                            },
+                            {
+                                src: "images/projects/fast-delivery/05.png",
+                                title: "Dashboard de entrega",
+                                subtitle:
+                                    "Dashboard com as entregas a serem realizadas por cada entregador com organização da sequência de entrega.",
+                            },
+                            {
+                                src: "images/projects/fast-delivery/06.png",
+                                title: "Gestão de pedidos",
+                                subtitle: "Tela de gestão dos pedidos.",
+                            },
+                        ],
+                        why: [
+                            "O Fast Delivery foi criado para atender às necessidades específicas de uma empresa de refeições saudáveis que buscava otimizar seu processo de pedidos e produção. Antes do desenvolvimento do sistema, a empresa enfrentava desafios significativos na gestão de pedidos, controle de produção e logística de entregas, o que impactava negativamente a eficiência operacional e a satisfação dos clientes.",
+                            "Com o Fast Delivery, a empresa conseguiu centralizar todas as operações em uma única plataforma. O sistema permite o gerenciamento eficiente dos pedidos, desde a recepção até a entrega, além de oferecer ferramentas para controlar a produção na cozinha, gerenciar o estoque de ingredientes e coordenar os entregadores. Isso resultou em uma melhoria significativa na organização interna, redução de erros e atrasos, e uma experiência mais satisfatória para os clientes.",
+                        ],
+                        technologies: [
+                            ["PHP", "bg-purple-400 text-purple-900"],
+                            ["CodeIgniter 3", "bg-red-400 text-red-900"],
+                            ["JavaScript", "bg-yellow-300 text-yellow-900"],
+                            ["MySQL", "bg-sky-300 text-sky-900"],
+                            ["Docker", "bg-blue-400 text-blue-900"],
+                        ],
+                    },
+                    benefactors: {
+                        name: "Benefactors",
+                        description:
+                            "Plataforma para gestão de benfeitores e suas contribuições a uma casa de formação religiosa. Controle completo de cadastros, doações e interações com os doadores.",
+                        gallery: [
+                            {
+                                src: "images/projects/benefactors/01.png",
+                                title: "Login",
+                                subtitle:
+                                    "Tela de login do sistema Benefactors.",
+                            },
+                            {
+                                src: "images/projects/benefactors/02.png",
+                                title: "Dashboard",
+                                subtitle:
+                                    "Dashboard inicial com várias informações resumidas.",
+                            },
+                            {
+                                src: "images/projects/benefactors/03.png",
+                                title: "Gestão de benfeitores",
+                                subtitle:
+                                    "Gestão de cadastros dos benfeitores.",
+                            },
+                            {
+                                src: "images/projects/benefactors/04.png",
+                                title: "Contribuições",
+                                subtitle:
+                                    "Gestão de contribuições dos benfeitores.",
+                            },
+                        ],
+                        why: [
+                            "A plataforma Benefactors foi desenvolvida para atender às necessidades específicas de uma casa de formação religiosa que buscava aprimorar a gestão de seus benfeitores e suas contribuições. Antes da implementação do sistema, a instituição enfrentava desafios na organização dos cadastros dos benfeitores, no acompanhamento das doações e na manutenção de um relacionamento eficaz com os doadores.",
+                            "Com o Benefactors, a casa de formação religiosa conseguiu centralizar todas as informações relacionadas aos benfeitores em uma única plataforma. O sistema permite o gerenciamento eficiente dos cadastros, o registro detalhado das doações e a facilitação das interações com os doadores. Isso resultou em uma melhoria significativa na organização interna, maior transparência nas contribuições recebidas e um fortalecimento do vínculo entre a instituição e seus benfeitores.",
+                        ],
+                        technologies: [
+                            ["PHP", "bg-purple-400 text-purple-900"],
+                            ["Laravel", "bg-orange-500 text-orange-900"],
+                            ["Vue 3", "bg-green-400 text-green-900"],
+                            ["Inertia.js", "bg-violet-300 text-violet-700"],
+                            ["JavaScript", "bg-yellow-300 text-yellow-900"],
+                            ["MySQL", "bg-sky-300 text-sky-900"],
+                            ["Docker", "bg-blue-400 text-blue-900"],
+                        ],
+                    },
+                };
+
+                // --- Carousel state ---
+                const modal = document.getElementById("projectModal");
+                const closeBtn = document.getElementById("closeModal");
+                const slideTrack = document.getElementById("modalSlideTrack");
+                const prevBtn = document.getElementById("prevSlide");
+                const nextBtn = document.getElementById("nextSlide");
+
+                let currentSlide = 0;
+                let totalSlides = 0;
+
+                function goToSlide(n) {
+                    currentSlide = (n + totalSlides) % totalSlides;
+                    slideTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+                }
+
+                prevBtn.addEventListener("click", () =>
+                    goToSlide(currentSlide - 1),
+                );
+                nextBtn.addEventListener("click", () =>
+                    goToSlide(currentSlide + 1),
+                );
+
+                modal.addEventListener("keydown", (e) => {
+                    if (e.key === "ArrowLeft") {
+                        e.preventDefault();
+                        goToSlide(currentSlide - 1);
+                    }
+                    if (e.key === "ArrowRight") {
+                        e.preventDefault();
+                        goToSlide(currentSlide + 1);
+                    }
+                });
+
+                // Close on backdrop click
+                modal.addEventListener("click", (e) => {
+                    const rect = modal.getBoundingClientRect();
+                    const inside =
+                        e.clientX >= rect.left &&
+                        e.clientX <= rect.right &&
+                        e.clientY >= rect.top &&
+                        e.clientY <= rect.bottom;
+                    if (!inside) modal.close();
+                });
+
+                closeBtn.addEventListener("click", () => modal.close());
+
+                // Restore body scroll when modal closes
+                modal.addEventListener("close", () => {
+                    document.body.style.overflow = "";
+                });
+
+                function openModal(slug) {
+                    const project = PROJECTS[slug];
+                    if (!project) return;
+
+                    modal.dataset.project = slug;
+
+                    // Fill header
+                    document.getElementById("modalName").textContent =
+                        project.name;
+                    document.getElementById("modalDescription").textContent =
+                        project.description;
+
+                    // Build slides
+                    slideTrack.innerHTML = "";
+                    totalSlides = project.gallery.length;
+                    project.gallery.forEach(({ src, title, subtitle }) => {
+                        const wrap = document.createElement("div");
+                        wrap.className = "relative flex-shrink-0 w-full h-full";
+
+                        const img = document.createElement("img");
+                        img.src = src;
+                        img.alt = title;
+                        img.className =
+                            "absolute inset-0 w-full h-full object-cover";
+
+                        const label = document.createElement("div");
+                        label.className =
+                            "absolute z-10 bottom-3 left-3 right-3 rounded-md px-4 py-3";
+                        label.style.cssText =
+                            "background: linear-gradient(to bottom left, rgba(255,255,255,0.1), rgba(255,255,255,0.5)); backdrop-filter: blur(8px); border: 1px solid rgba(209,213,219,0.5);";
+
+                        if (title) {
+                            const h2 = document.createElement("h2");
+                            h2.className =
+                                "text-gray-600 text-sm font-bold m-0";
+                            h2.textContent = title;
+                            label.appendChild(h2);
+                        }
+                        if (subtitle) {
+                            const p = document.createElement("p");
+                            p.className = "text-gray-600 text-xs m-0";
+                            p.textContent = subtitle;
+                            label.appendChild(p);
+                        }
+
+                        wrap.appendChild(img);
+                        wrap.appendChild(label);
+                        slideTrack.appendChild(wrap);
+                    });
+
+                    // Reset to first slide
+                    slideTrack.style.transition = "none";
+                    slideTrack.style.transform = "translateX(0)";
+                    currentSlide = 0;
+                    requestAnimationFrame(() => {
+                        slideTrack.style.transition = "transform 0.4s ease";
+                    });
+
+                    // Fill why
+                    const whyEl = document.getElementById("modalWhy");
+                    whyEl.innerHTML = "";
+                    project.why.forEach((p) => {
+                        const el = document.createElement("p");
+                        el.className =
+                            "leading-8 text-lg text-gray-600 tracking-tight";
+                        el.textContent = p;
+                        whyEl.appendChild(el);
+                    });
+
+                    // Fill technologies
+                    const techEl = document.getElementById("modalTech");
+                    techEl.innerHTML = "";
+                    techEl.className =
+                        "tracking-tight leading-8 flex flex-wrap items-center text-sm";
+                    techEl.style.cssText = "";
+                    project.technologies.forEach(([label, cls]) => {
+                        const mark = document.createElement("mark");
+                        mark.className = `inline-block py-0 px-3 rounded-full font-semibold mr-1 mb-2 ${cls}`;
+                        mark.textContent = label;
+                        techEl.appendChild(mark);
+                    });
+
+                    document.body.style.overflow = "hidden";
+                    modal.scrollTop = 0;
+                    modal.showModal();
+                }
+
+                document
+                    .querySelectorAll("[data-open-modal]")
+                    .forEach((btn) => {
+                        btn.addEventListener("click", () =>
+                            openModal(btn.dataset.openModal),
+                        );
+                    });
+            })();
+        </script>
+
+        <script>
+        (function () {
+          // Get form and fields
+          const form = document.getElementById('contactForm');
+          const nameInput = document.getElementById('name');
+          const emailInput = document.getElementById('email');
+          const messageInput = document.getElementById('message');
+
+          // Get error spans
+          const nameError = document.getElementById('name-error');
+          const emailError = document.getElementById('email-error');
+          const messageError = document.getElementById('message-error');
+
+          // Validation error messages (Portuguese)
+          const ERRORS = {
+            name: 'Nome é obrigatório.',
+            emailRequired: 'E-mail é obrigatório.',
+            emailInvalid: 'E-mail inválido.',
+            message: 'Mensagem é obrigatória.'
+          };
+
+          function showError(input, errorElem, message) {
+            errorElem.textContent = message;
+            errorElem.classList.remove('hidden');
+            input.setAttribute('aria-invalid', 'true');
+            if (input.id && errorElem.id) {
+              input.setAttribute('aria-describedby', errorElem.id);
+            }
+            input.classList.add('border-red-700');
+          }
+
+          function hideError(input, errorElem) {
+            errorElem.textContent = '';
+            errorElem.classList.add('hidden');
+            input.setAttribute('aria-invalid', 'false');
+            input.classList.remove('border-red-700');
+          }
+
+          function validateName() {
+            if (!nameInput.value.trim()) {
+              showError(nameInput, nameError, ERRORS.name);
+              return false;
+            }
+            hideError(nameInput, nameError);
+            return true;
+          }
+
+          function validateEmail() {
+            const value = emailInput.value.trim();
+            if (!value) {
+              showError(emailInput, emailError, ERRORS.emailRequired);
+              return false;
+            }
+            const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+            if (!valid) {
+              showError(emailInput, emailError, ERRORS.emailInvalid);
+              return false;
+            }
+            hideError(emailInput, emailError);
+            return true;
+          }
+
+          function validateMessage() {
+            if (!messageInput.value.trim()) {
+              showError(messageInput, messageError, ERRORS.message);
+              return false;
+            }
+            hideError(messageInput, messageError);
+            return true;
+          }
+
+          function validateAll(e) {
+            let firstInvalid = null;
+            if (!validateName()) firstInvalid = nameInput;
+            if (!validateEmail() && !firstInvalid) firstInvalid = emailInput;
+            if (!validateMessage() && !firstInvalid) firstInvalid = messageInput;
+
+            if (firstInvalid && e) {
+              e.preventDefault();
+              firstInvalid.focus();
+            }
+            return !firstInvalid;
+          }
+
+          nameInput.addEventListener('input', validateName);
+          nameInput.addEventListener('blur', validateName);
+
+          emailInput.addEventListener('input', validateEmail);
+          emailInput.addEventListener('blur', validateEmail);
+
+          messageInput.addEventListener('input', validateMessage);
+          messageInput.addEventListener('blur', validateMessage);
+
+          form.addEventListener('submit', function(e) {
+            const isValid = validateAll(e);
+            if (!isValid) {
+              e.preventDefault();
+              return false;
+            }
+            return true;
+          });
+        })();
+        </script>
+    </body>
+</html>
