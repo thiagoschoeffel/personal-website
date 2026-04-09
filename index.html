@@ -1,6 +1,21 @@
 <!doctype html>
 <html lang="pt-BR">
     <head>
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-WSKNCJ1T9S"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-WSKNCJ1T9S");
+        </script>
+
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -1313,7 +1328,11 @@
                         />
                         <input type="hidden" name="_captcha" value="true" />
                         <input type="hidden" name="_template" value="box" />
-                        <input type="text" name="_honey" style="display:none" />
+                        <input
+                            type="text"
+                            name="_honey"
+                            style="display: none"
+                        />
 
                         <div
                             id="formSuccess"
@@ -2052,107 +2071,109 @@
         </script>
 
         <script>
-        (function () {
-          // Get form and fields
-          const form = document.getElementById('contactForm');
-          const nameInput = document.getElementById('name');
-          const emailInput = document.getElementById('email');
-          const messageInput = document.getElementById('message');
+            (function () {
+                // Get form and fields
+                const form = document.getElementById("contactForm");
+                const nameInput = document.getElementById("name");
+                const emailInput = document.getElementById("email");
+                const messageInput = document.getElementById("message");
 
-          // Get error spans
-          const nameError = document.getElementById('name-error');
-          const emailError = document.getElementById('email-error');
-          const messageError = document.getElementById('message-error');
+                // Get error spans
+                const nameError = document.getElementById("name-error");
+                const emailError = document.getElementById("email-error");
+                const messageError = document.getElementById("message-error");
 
-          // Validation error messages (Portuguese)
-          const ERRORS = {
-            name: 'Nome é obrigatório.',
-            emailRequired: 'E-mail é obrigatório.',
-            emailInvalid: 'E-mail inválido.',
-            message: 'Mensagem é obrigatória.'
-          };
+                // Validation error messages (Portuguese)
+                const ERRORS = {
+                    name: "Nome é obrigatório.",
+                    emailRequired: "E-mail é obrigatório.",
+                    emailInvalid: "E-mail inválido.",
+                    message: "Mensagem é obrigatória.",
+                };
 
-          function showError(input, errorElem, message) {
-            errorElem.textContent = message;
-            errorElem.classList.remove('hidden');
-            input.setAttribute('aria-invalid', 'true');
-            if (input.id && errorElem.id) {
-              input.setAttribute('aria-describedby', errorElem.id);
-            }
-            input.classList.add('border-red-700');
-          }
+                function showError(input, errorElem, message) {
+                    errorElem.textContent = message;
+                    errorElem.classList.remove("hidden");
+                    input.setAttribute("aria-invalid", "true");
+                    if (input.id && errorElem.id) {
+                        input.setAttribute("aria-describedby", errorElem.id);
+                    }
+                    input.classList.add("border-red-700");
+                }
 
-          function hideError(input, errorElem) {
-            errorElem.textContent = '';
-            errorElem.classList.add('hidden');
-            input.setAttribute('aria-invalid', 'false');
-            input.classList.remove('border-red-700');
-          }
+                function hideError(input, errorElem) {
+                    errorElem.textContent = "";
+                    errorElem.classList.add("hidden");
+                    input.setAttribute("aria-invalid", "false");
+                    input.classList.remove("border-red-700");
+                }
 
-          function validateName() {
-            if (!nameInput.value.trim()) {
-              showError(nameInput, nameError, ERRORS.name);
-              return false;
-            }
-            hideError(nameInput, nameError);
-            return true;
-          }
+                function validateName() {
+                    if (!nameInput.value.trim()) {
+                        showError(nameInput, nameError, ERRORS.name);
+                        return false;
+                    }
+                    hideError(nameInput, nameError);
+                    return true;
+                }
 
-          function validateEmail() {
-            const value = emailInput.value.trim();
-            if (!value) {
-              showError(emailInput, emailError, ERRORS.emailRequired);
-              return false;
-            }
-            const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
-            if (!valid) {
-              showError(emailInput, emailError, ERRORS.emailInvalid);
-              return false;
-            }
-            hideError(emailInput, emailError);
-            return true;
-          }
+                function validateEmail() {
+                    const value = emailInput.value.trim();
+                    if (!value) {
+                        showError(emailInput, emailError, ERRORS.emailRequired);
+                        return false;
+                    }
+                    const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+                    if (!valid) {
+                        showError(emailInput, emailError, ERRORS.emailInvalid);
+                        return false;
+                    }
+                    hideError(emailInput, emailError);
+                    return true;
+                }
 
-          function validateMessage() {
-            if (!messageInput.value.trim()) {
-              showError(messageInput, messageError, ERRORS.message);
-              return false;
-            }
-            hideError(messageInput, messageError);
-            return true;
-          }
+                function validateMessage() {
+                    if (!messageInput.value.trim()) {
+                        showError(messageInput, messageError, ERRORS.message);
+                        return false;
+                    }
+                    hideError(messageInput, messageError);
+                    return true;
+                }
 
-          function validateAll(e) {
-            let firstInvalid = null;
-            if (!validateName()) firstInvalid = nameInput;
-            if (!validateEmail() && !firstInvalid) firstInvalid = emailInput;
-            if (!validateMessage() && !firstInvalid) firstInvalid = messageInput;
+                function validateAll(e) {
+                    let firstInvalid = null;
+                    if (!validateName()) firstInvalid = nameInput;
+                    if (!validateEmail() && !firstInvalid)
+                        firstInvalid = emailInput;
+                    if (!validateMessage() && !firstInvalid)
+                        firstInvalid = messageInput;
 
-            if (firstInvalid && e) {
-              e.preventDefault();
-              firstInvalid.focus();
-            }
-            return !firstInvalid;
-          }
+                    if (firstInvalid && e) {
+                        e.preventDefault();
+                        firstInvalid.focus();
+                    }
+                    return !firstInvalid;
+                }
 
-          nameInput.addEventListener('input', validateName);
-          nameInput.addEventListener('blur', validateName);
+                nameInput.addEventListener("input", validateName);
+                nameInput.addEventListener("blur", validateName);
 
-          emailInput.addEventListener('input', validateEmail);
-          emailInput.addEventListener('blur', validateEmail);
+                emailInput.addEventListener("input", validateEmail);
+                emailInput.addEventListener("blur", validateEmail);
 
-          messageInput.addEventListener('input', validateMessage);
-          messageInput.addEventListener('blur', validateMessage);
+                messageInput.addEventListener("input", validateMessage);
+                messageInput.addEventListener("blur", validateMessage);
 
-          form.addEventListener('submit', function(e) {
-            const isValid = validateAll(e);
-            if (!isValid) {
-              e.preventDefault();
-              return false;
-            }
-            return true;
-          });
-        })();
+                form.addEventListener("submit", function (e) {
+                    const isValid = validateAll(e);
+                    if (!isValid) {
+                        e.preventDefault();
+                        return false;
+                    }
+                    return true;
+                });
+            })();
         </script>
     </body>
 </html>
