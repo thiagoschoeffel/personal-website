@@ -1,30 +1,30 @@
 # Personal Website
 
-Portfólio pessoal de Thiago Schoeffel — desenvolvido em HTML, Tailwind CSS e JavaScript puro, sem dependências de build ou framework.
+Personal portfolio of Thiago Schoeffel — built with HTML, Tailwind CSS, and vanilla JavaScript, with no build dependencies or frameworks.
 
 ## 🚀 Stack
 
 - HTML5
 - Tailwind CSS (via CDN)
 - JavaScript (vanilla)
-- [FormSubmit](https://formsubmit.co/) (envio do formulário de contato, sem backend)
+- [FormSubmit](https://formsubmit.co/) (contact form submissions, no backend required)
 
-## ▶️ Rodando localmente
+## ▶️ Running locally
 
-Por ser um site estático, basta abrir o `index.html` diretamente no navegador ou servir com qualquer servidor HTTP estático.
+Since this is a static site, simply open `index.html` directly in the browser or serve it with any static HTTP server.
 
-Exemplo com Python:
+Example with Python:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Acesse em [http://localhost:8000](http://localhost:8000).
+Access it at [http://localhost:8000](http://localhost:8000).
 
-## 📄 Licença
+## 📄 License
 
-**Sem licença (No license).**
+**No license.**
 
-Este repositório é disponibilizado apenas para **visualização**. **Não é permitido** usar, copiar, modificar ou distribuir o código sem autorização **por escrito** do autor.
+This repository is made available for **viewing purposes only**. **You are not allowed** to use, copy, modify, or distribute the code without **written** authorization from the author.
 
-Todos os direitos reservados.
+All rights reserved.
