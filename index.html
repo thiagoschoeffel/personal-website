@@ -205,6 +205,7 @@
         <!-- Pular para o conteúdo (acessibilidade) -->
         <a
             href="#conteudo-principal"
+            data-i18n="skip_link"
             class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[200] focus:px-4 focus:py-2 focus:bg-violet-800 focus:text-white focus:rounded-md focus:font-semibold focus:shadow-lg"
         >
             Pular para o conteúdo
@@ -224,6 +225,7 @@
                             aria-expanded="false"
                             aria-controls="mobileNav"
                             aria-label="Abrir menu"
+                            data-i18n-aria-label="nav_open_menu"
                         >
                             <svg
                                 id="iconMenu"
@@ -274,6 +276,7 @@
                                 data-scroll-top
                                 data-section="inicio"
                                 class="nav-link text-lg text-gray-600"
+                                data-i18n="nav_home"
                                 >Início</a
                             >
                         </li>
@@ -282,6 +285,7 @@
                                 href="#sobre"
                                 class="nav-link text-lg text-gray-600"
                                 data-section="sobre"
+                                data-i18n="nav_about"
                                 >Sobre</a
                             >
                         </li>
@@ -290,6 +294,7 @@
                                 href="#contato"
                                 class="nav-link text-lg text-gray-600"
                                 data-section="contato"
+                                data-i18n="nav_contact"
                                 >Contato</a
                             >
                         </li>
@@ -330,6 +335,42 @@
                                 />
                             </svg>
                         </a>
+
+                        <!-- Language toggle -->
+                        <div
+                            class="flex items-center gap-1"
+                            role="group"
+                            aria-label="Language selector"
+                        >
+                            <button
+                                id="lang-pt-br"
+                                class="flex flex-col items-center py-1 px-2 rounded-xl cursor-pointer transition-colors bg-violet-800 text-white"
+                                aria-label="Português do Brasil"
+                                aria-pressed="true"
+                            >
+                                <img
+                                    src="images/assets/flag-brazil.png"
+                                    alt=""
+                                    class="w-5 h-5 object-contain mb-1 rounded-full border-2"
+                                    aria-hidden="true"
+                                />
+                                <span class="text-xs font-semibold">PT-BR</span>
+                            </button>
+                            <button
+                                id="lang-en-us"
+                                class="flex flex-col items-center py-1 px-2 rounded-xl cursor-pointer transition-colors text-gray-600"
+                                aria-label="English (United States)"
+                                aria-pressed="false"
+                            >
+                                <img
+                                    src="images/assets/flag-eua.png"
+                                    alt=""
+                                    class="w-5 h-5 object-contain mb-1 rounded-full border-2"
+                                    aria-hidden="true"
+                                />
+                                <span class="text-xs font-semibold">EN-US</span>
+                            </button>
+                        </div>
                     </div>
                 </nav>
             </div>
@@ -348,6 +389,7 @@
                                 data-scroll-top
                                 data-section="inicio"
                                 class="mobile-nav-link block py-2 text-lg text-gray-700"
+                                data-i18n="nav_home"
                                 >Início</a
                             >
                         </li>
@@ -356,6 +398,7 @@
                                 href="#sobre"
                                 class="mobile-nav-link block py-2 text-lg text-gray-700"
                                 data-section="sobre"
+                                data-i18n="nav_about"
                                 >Sobre</a
                             >
                         </li>
@@ -364,6 +407,7 @@
                                 href="#contato"
                                 class="mobile-nav-link block py-2 text-lg text-gray-700"
                                 data-section="contato"
+                                data-i18n="nav_contact"
                                 >Contato</a
                             >
                         </li>
@@ -388,7 +432,9 @@
                         Full-Stack Developer
                     </h1>
                     <p class="text-lg sm:text-2xl text-white tracking-light">
-                        Soluções web completas com
+                        <span data-i18n="hero_subtitle_prefix"
+                            >Soluções web completas com</span
+                        >
                         <span
                             data-typer
                             data-words='[".NET","PHP","Vue 3"]'
@@ -427,11 +473,13 @@
                         <div class="text-center sm:text-left">
                             <h2
                                 class="relative z-10 text-6xl font-bold text-gray-200 tracking-tight mb-4"
+                                data-i18n="about_heading"
                             >
                                 Sobre
                             </h2>
                             <p
                                 class="leading-8 font-normal text-xl text-gray-200"
+                                data-i18n-html="about_text"
                             >
                                 Desde 2008, desenvolvendo soluções de software
                                 com foco em
@@ -462,10 +510,14 @@
                 <div class="w-full max-w-6xl mx-auto px-4 py-24">
                     <h2
                         class="mb-4 text-4xl font-bold text-gray-600 tracking-tight"
+                        data-i18n="goals_heading"
                     >
                         Meus objetivos profissionais
                     </h2>
-                    <p class="leading-8 text-lg text-gray-600 tracking-tight">
+                    <p
+                        class="leading-8 text-lg text-gray-600 tracking-tight"
+                        data-i18n="goals_text"
+                    >
                         Contribuir com projetos de desenvolvimento de software
                         orientados à inovação e melhoria contínua, buscando
                         sempre entregar soluções estáveis, eficientes e de
@@ -479,6 +531,7 @@
                 <div class="w-full max-w-6xl mx-auto px-4 py-24">
                     <h2
                         class="text-4xl font-bold text-gray-200 tracking-tight pl-4 border-l-[10px] border-purple-900"
+                        data-i18n="experience_heading"
                     >
                         Experiência profissional
                     </h2>
@@ -506,6 +559,7 @@
                         <div class="min-w-0">
                             <h3
                                 class="text-gray-200 text-2xl font-semibold tracking-tight mb-1"
+                                data-i18n="agrotools_title"
                             >
                                 Desenvolvedor de Software Pleno Full-Stack
                             </h3>
@@ -516,14 +570,17 @@
                                 >
                                 <span
                                     class="inline-block text-gray-200 tracking-tight"
-                                    >&centerdot; 25/03/2021 – Atualmente (<span
-                                        id="agrotools-duration"
-                                    ></span
+                                    >&centerdot; 25/03/2021 –
+                                    <span data-i18n="currently"
+                                        >Atualmente</span
+                                    >
+                                    (<span id="agrotools-duration"></span
                                     >)</span
                                 >
                             </p>
                             <p
                                 class="leading-8 text-gray-200 tracking-tight mb-4"
+                                data-i18n="agrotools_description"
                             >
                                 Atuação no desenvolvimento de aplicações
                                 voltadas ao agronegócio, com foco em soluções
@@ -533,6 +590,7 @@
                             <ul class="list-disc pl-8 space-y-2 mb-4">
                                 <li
                                     class="leading-8 text-gray-200 tracking-tight"
+                                    data-i18n-html="agrotools_bullet_1"
                                 >
                                     Desenvolvimento de sistemas com
                                     <span class="border-b-4 border-purple-900"
@@ -546,6 +604,7 @@
                                 </li>
                                 <li
                                     class="leading-8 text-gray-200 tracking-tight"
+                                    data-i18n-html="agrotools_bullet_2"
                                 >
                                     Criação e manutenção de
                                     <span class="border-b-4 border-purple-900"
@@ -562,6 +621,7 @@
                                 </li>
                                 <li
                                     class="leading-8 text-gray-200 tracking-tight"
+                                    data-i18n-html="agrotools_bullet_3"
                                 >
                                     Definição e ajustes em pipelines de
                                     <span class="border-b-4 border-purple-900"
@@ -574,6 +634,7 @@
                                 </li>
                                 <li
                                     class="leading-8 text-gray-200 tracking-tight"
+                                    data-i18n-html="agrotools_bullet_4"
                                 >
                                     Construção e manutenção de rotinas com
                                     <span class="border-b-4 border-purple-900"
@@ -582,6 +643,7 @@
                                 </li>
                                 <li
                                     class="leading-8 text-gray-200 tracking-tight"
+                                    data-i18n-html="agrotools_bullet_5"
                                 >
                                     Uso extensivo de
                                     <span class="border-b-4 border-purple-900"
@@ -596,6 +658,7 @@
                                 </li>
                                 <li
                                     class="leading-8 text-gray-200 tracking-tight"
+                                    data-i18n-html="agrotools_bullet_6"
                                 >
                                     Atuação com
                                     <span class="border-b-4 border-purple-900"
@@ -611,7 +674,10 @@
                                     ambiente de execução.
                                 </li>
                             </ul>
-                            <p class="leading-8 text-gray-200 tracking-tight">
+                            <p
+                                class="leading-8 text-gray-200 tracking-tight"
+                                data-i18n="agrotools_summary"
+                            >
                                 Essa experiência tem reforçado minha atuação
                                 como desenvolvedor full stack em projetos com
                                 forte presença de dados geoespaciais, automação,
@@ -643,6 +709,7 @@
                         <div class="min-w-0">
                             <h3
                                 class="text-gray-200 text-2xl font-semibold tracking-tight mb-1"
+                                data-i18n="sardo_title"
                             >
                                 Analista e Desenvolvedor de Sistemas
                             </h3>
@@ -653,12 +720,14 @@
                                 >
                                 <span
                                     class="inline-block text-gray-200 tracking-tight"
+                                    data-i18n="sardo_period"
                                     >&centerdot; 10/01/2019 – 31/07/2020 (1 ano
                                     e 6 meses)</span
                                 >
                             </p>
                             <p
                                 class="leading-8 text-gray-200 tracking-tight mb-4"
+                                data-i18n="sardo_description"
                             >
                                 Atuação no desenvolvimento de aplicações
                                 voltadas ao agronegócio, com foco em soluções
@@ -668,6 +737,7 @@
                             <ul class="list-disc pl-8 space-y-2 mb-4">
                                 <li
                                     class="leading-8 text-gray-200 tracking-tight"
+                                    data-i18n-html="sardo_bullet_1"
                                 >
                                     Responsável por parametrizações,
                                     configurações e suporte aos usuários em
@@ -694,6 +764,7 @@
                                 </li>
                                 <li
                                     class="leading-8 text-gray-200 tracking-tight"
+                                    data-i18n-html="sardo_bullet_2"
                                 >
                                     Desenvolvimento de módulo personalizado
                                     dentro do ERP Senior para
@@ -705,6 +776,7 @@
                                 </li>
                                 <li
                                     class="leading-8 text-gray-200 tracking-tight"
+                                    data-i18n="sardo_bullet_3"
                                 >
                                     Apoio direto ao cliente em rotinas fiscais,
                                     operacionais e administrativas, garantindo
@@ -713,6 +785,7 @@
                                 </li>
                                 <li
                                     class="leading-8 text-gray-200 tracking-tight"
+                                    data-i18n-html="sardo_bullet_4"
                                 >
                                     Criação de dashboard em
                                     <span class="border-b-4 border-purple-900"
@@ -726,6 +799,7 @@
                                 </li>
                                 <li
                                     class="leading-8 text-gray-200 tracking-tight"
+                                    data-i18n-html="sardo_bullet_5"
                                 >
                                     Desenvolvimento de sistema para inspeções de
                                     qualidade no setor madeireiro, com
@@ -739,7 +813,10 @@
                                     medições de amostras em campo.
                                 </li>
                             </ul>
-                            <p class="leading-8 text-gray-200 tracking-tight">
+                            <p
+                                class="leading-8 text-gray-200 tracking-tight"
+                                data-i18n="sardo_summary"
+                            >
                                 Essa experiência tem reforçado minha atuação
                                 como desenvolvedor full stack em projetos com
                                 forte presença de dados geoespaciais, automação,
@@ -771,6 +848,7 @@
                         <div class="min-w-0">
                             <h3
                                 class="text-gray-200 text-2xl font-semibold tracking-tight mb-1"
+                                data-i18n="isopack_title"
                             >
                                 Analista e Desenvolvedor de Sistemas
                             </h3>
@@ -781,12 +859,14 @@
                                 >
                                 <span
                                     class="inline-block text-gray-200 tracking-tight"
+                                    data-i18n="isopack_period"
                                     >&centerdot; 01/08/2013 – 14/12/2018 (5 anos
                                     e 4 meses)</span
                                 >
                             </p>
                             <p
                                 class="leading-8 text-gray-200 tracking-tight mb-4"
+                                data-i18n="isopack_description"
                             >
                                 Iniciei na empresa como suporte de TI durante a
                                 implantação de um novo ERP, e com o tempo assumi
@@ -797,6 +877,7 @@
                             <ul class="list-disc pl-8 space-y-2 mb-4">
                                 <li
                                     class="leading-8 text-gray-200 tracking-tight"
+                                    data-i18n-html="isopack_bullet_1"
                                 >
                                     Apoio direto à equipe de
                                     <span class="border-b-4 border-purple-900"
@@ -807,6 +888,7 @@
                                 </li>
                                 <li
                                     class="leading-8 text-gray-200 tracking-tight"
+                                    data-i18n-html="isopack_bullet_2"
                                 >
                                     Prestação de
                                     <span class="border-b-4 border-purple-900"
@@ -829,6 +911,7 @@
                                 </li>
                                 <li
                                     class="leading-8 text-gray-200 tracking-tight"
+                                    data-i18n-html="isopack_bullet_3"
                                 >
                                     Atuação com servidores
                                     <span class="border-b-4 border-purple-900"
@@ -842,6 +925,7 @@
                                 </li>
                                 <li
                                     class="leading-8 text-gray-200 tracking-tight"
+                                    data-i18n-html="isopack_bullet_4"
                                 >
                                     Desenvolvimento de extensões para o ERP com
                                     <span class="border-b-4 border-purple-900"
@@ -855,6 +939,7 @@
                                 </li>
                                 <li
                                     class="leading-8 text-gray-200 tracking-tight"
+                                    data-i18n-html="isopack_bullet_5"
                                 >
                                     Criação de uma aplicação estilo
                                     <span class="border-b-4 border-purple-900"
@@ -871,6 +956,7 @@
                                 </li>
                                 <li
                                     class="leading-8 text-gray-200 tracking-tight"
+                                    data-i18n-html="isopack_bullet_6"
                                 >
                                     Desenvolvimento de um sistema de gestão da
                                     produção de EPS, incluindo controle de
@@ -886,7 +972,10 @@
                                     >.
                                 </li>
                             </ul>
-                            <p class="leading-8 text-gray-200 tracking-tight">
+                            <p
+                                class="leading-8 text-gray-200 tracking-tight"
+                                data-i18n="isopack_summary"
+                            >
                                 Essa experiência consolidou minha transição do
                                 suporte técnico para o desenvolvimento de
                                 sistemas, com foco em soluções alinhadas às
@@ -918,6 +1007,7 @@
                         <div class="min-w-0">
                             <h3
                                 class="text-gray-200 text-2xl font-semibold tracking-tight mb-1"
+                                data-i18n="luani_title"
                             >
                                 Auxiliar de Vendas
                             </h3>
@@ -928,12 +1018,14 @@
                                 >
                                 <span
                                     class="inline-block text-gray-200 tracking-tight"
+                                    data-i18n="luani_period"
                                     >&centerdot; 08/10/2007 – 31/07/2013 (5 anos
                                     e 9 meses)</span
                                 >
                             </p>
                             <p
                                 class="leading-8 text-gray-200 tracking-tight mb-4"
+                                data-i18n="luani_description"
                             >
                                 Atuação multifuncional em papelaria e loja de
                                 festas, com envolvimento direto em áreas de
@@ -945,6 +1037,7 @@
                             <ul class="list-disc pl-8 space-y-2 mb-4">
                                 <li
                                     class="leading-8 text-gray-200 tracking-tight"
+                                    data-i18n="luani_bullet_1"
                                 >
                                     Responsável por atualizar banners e produtos
                                     no site da empresa por meio de painel de
@@ -953,6 +1046,7 @@
                                 </li>
                                 <li
                                     class="leading-8 text-gray-200 tracking-tight"
+                                    data-i18n-html="luani_bullet_2"
                                 >
                                     Apoio no lançamento da
                                     <span class="border-b-4 border-purple-900"
@@ -964,6 +1058,7 @@
                                 </li>
                                 <li
                                     class="leading-8 text-gray-200 tracking-tight"
+                                    data-i18n-html="luani_bullet_3"
                                 >
                                     Criação de blog em
                                     <span class="border-b-4 border-purple-900"
@@ -980,6 +1075,7 @@
                                 </li>
                                 <li
                                     class="leading-8 text-gray-200 tracking-tight"
+                                    data-i18n="luani_bullet_4"
                                 >
                                     Atuação no atendimento ao público, vendas
                                     diretas, organização e reposição de produtos
@@ -987,6 +1083,7 @@
                                 </li>
                                 <li
                                     class="leading-8 text-gray-200 tracking-tight"
+                                    data-i18n="luani_bullet_5"
                                 >
                                     Cadastro de produtos no sistema de vendas,
                                     precificação com base em notas fiscais,
@@ -994,13 +1091,17 @@
                                 </li>
                                 <li
                                     class="leading-8 text-gray-200 tracking-tight"
+                                    data-i18n="luani_bullet_6"
                                 >
                                     Apoio logístico em entregas aos clientes,
                                     contribuindo para a operação completa do
                                     negócio.
                                 </li>
                             </ul>
-                            <p class="leading-8 text-gray-200 tracking-tight">
+                            <p
+                                class="leading-8 text-gray-200 tracking-tight"
+                                data-i18n="luani_summary"
+                            >
                                 Essa experiência foi fundamental para despertar
                                 meu interesse por tecnologia e por compreender
                                 todas as etapas operacionais de uma empresa.
@@ -1015,10 +1116,14 @@
                 <div class="w-full max-w-6xl mx-auto px-4 py-24">
                     <h2
                         class="mb-12 text-4xl font-bold text-gray-600 tracking-tight"
+                        data-i18n="freelance_heading"
                     >
                         Serviços como consultor independente
                     </h2>
-                    <p class="leading-8 text-gray-600 tracking-tight mb-12">
+                    <p
+                        class="leading-8 text-gray-600 tracking-tight mb-12"
+                        data-i18n="freelance_intro"
+                    >
                         Atuei em diversos projetos na modalidade freelance,
                         desenvolvendo soluções personalizadas para parceiros e
                         pequenos negócios. Os trabalhos incluíram desde websites
@@ -1061,7 +1166,10 @@
                                     >Docker</mark
                                 >
                             </p>
-                            <p class="text-gray-600 tracking-tight leading-8">
+                            <p
+                                class="text-gray-600 tracking-tight leading-8"
+                                data-i18n="bc_description"
+                            >
                                 Sistema para gerenciamento da produção de blocos
                                 e moldados de EPS (poliestireno expandido), com
                                 controle de paradas de máquina e movimentações
@@ -1104,7 +1212,10 @@
                                     >Docker</mark
                                 >
                             </p>
-                            <p class="text-gray-600 tracking-tight leading-8">
+                            <p
+                                class="text-gray-600 tracking-tight leading-8"
+                                data-i18n="fd_description"
+                            >
                                 Sistema de controle de pedidos e produção para
                                 uma empresa de refeições saudáveis. Inclui
                                 funcionalidades para gestão de cozinha,
@@ -1155,7 +1266,10 @@
                                     >Docker</mark
                                 >
                             </p>
-                            <p class="text-gray-600 tracking-tight leading-8">
+                            <p
+                                class="text-gray-600 tracking-tight leading-8"
+                                data-i18n="bf_description"
+                            >
                                 Plataforma para gestão de benfeitores e suas
                                 contribuições a uma casa de formação religiosa.
                                 Controle completo de cadastros, doações e
@@ -1171,6 +1285,7 @@
                 <div class="w-full max-w-6xl mx-auto px-4 py-24">
                     <h2
                         class="mb-4 text-4xl font-bold text-gray-600 tracking-tight"
+                        data-i18n="education_heading"
                     >
                         Educação
                     </h2>
@@ -1198,6 +1313,7 @@
                         <div class="min-w-0">
                             <h3
                                 class="text-gray-600 text-2xl font-semibold tracking-tight mb-1"
+                                data-i18n-html="udesc_degree"
                             >
                                 Bacharelado em Sistemas de Informação
                                 <strong>(não concluído)</strong>
@@ -1209,6 +1325,7 @@
                             </p>
                             <p
                                 class="text-gray-500 text-lg tracking-tight italic"
+                                data-i18n-html="udesc_duration"
                             >
                                 Cursado por 3 anos
                                 <strong>(2013 – 2016)</strong>
@@ -1239,6 +1356,7 @@
                         <div class="min-w-0">
                             <h3
                                 class="text-gray-600 text-2xl font-semibold tracking-tight mb-1"
+                                data-i18n="unisul_degree"
                             >
                                 Tecnólogo em Web Design e Programação
                             </h3>
@@ -1262,26 +1380,45 @@
                 <div class="w-full max-w-6xl mx-auto px-4 py-24">
                     <h2
                         class="mb-12 text-4xl font-bold text-gray-600 tracking-tight"
+                        data-i18n="final_heading"
                     >
                         Considerações finais
                     </h2>
                     <ul class="list-disc pl-8 space-y-2 mb-4">
-                        <li class="leading-8 text-gray-600 tracking-tight">
+                        <li
+                            class="leading-8 text-gray-600 tracking-tight"
+                            data-i18n="final_item_1"
+                        >
                             Casado, pai de uma filha
                         </li>
-                        <li class="leading-8 text-gray-600 tracking-tight">
+                        <li
+                            class="leading-8 text-gray-600 tracking-tight"
+                            data-i18n="final_item_2"
+                        >
                             Fácil aprendizado de novas tecnologias e processos
                         </li>
-                        <li class="leading-8 text-gray-600 tracking-tight">
+                        <li
+                            class="leading-8 text-gray-600 tracking-tight"
+                            data-i18n="final_item_3"
+                        >
                             Constante aperfeiçoamento profissional
                         </li>
-                        <li class="leading-8 text-gray-600 tracking-tight">
+                        <li
+                            class="leading-8 text-gray-600 tracking-tight"
+                            data-i18n="final_item_4"
+                        >
                             Sempre disposto a encarar novos desafios
                         </li>
-                        <li class="leading-8 text-gray-600 tracking-tight">
+                        <li
+                            class="leading-8 text-gray-600 tracking-tight"
+                            data-i18n="final_item_5"
+                        >
                             Autodidata
                         </li>
-                        <li class="leading-8 text-gray-600 tracking-tight">
+                        <li
+                            class="leading-8 text-gray-600 tracking-tight"
+                            data-i18n="final_item_6"
+                        >
                             Disponível para viagens
                         </li>
                     </ul>
@@ -1294,10 +1431,14 @@
                 <div class="w-full max-w-6xl mx-auto px-4 py-12">
                     <h2
                         class="relative z-10 text-6xl font-bold text-gray-200 tracking-tight mb-4"
+                        data-i18n="contact_heading"
                     >
                         Contato
                     </h2>
-                    <p class="leading-8 font-normal text-xl text-gray-200">
+                    <p
+                        class="leading-8 font-normal text-xl text-gray-200"
+                        data-i18n="contact_intro"
+                    >
                         Entre em contato para conversar sobre projetos,
                         parcerias ou oportunidades.
                     </p>
@@ -1307,7 +1448,9 @@
             <!-- ===== CONTATO — formulário ===== -->
             <section>
                 <div class="w-full max-w-6xl mx-auto px-4 py-12">
-                    <h2 class="sr-only">Formulário de contato</h2>
+                    <h2 class="sr-only" data-i18n="contact_form_sr">
+                        Formulário de contato
+                    </h2>
 
                     <!--
                     Para ativar o envio de e-mail, substitua YOUR_EMAIL pelo seu endereço
@@ -1339,6 +1482,7 @@
                             role="alert"
                             aria-live="polite"
                             class="hidden mb-6 rounded-md bg-green-100 text-green-800 px-4 py-3"
+                            data-i18n="form_success"
                         >
                             Mensagem enviada com sucesso! Te respondo em breve.
                         </div>
@@ -1347,6 +1491,7 @@
                             role="alert"
                             aria-live="assertive"
                             class="hidden mb-6 rounded-md bg-red-100 text-red-800 px-4 py-3"
+                            data-i18n="form_error"
                         >
                             Ocorreu um erro ao enviar a mensagem. Por favor,
                             tente novamente.
@@ -1368,6 +1513,7 @@
                             <label
                                 for="name"
                                 class="block font-semibold text-gray-600"
+                                data-i18n="form_name_label"
                                 >Nome</label
                             >
                             <input
@@ -1390,6 +1536,7 @@
                             <label
                                 for="email"
                                 class="block font-semibold text-gray-600"
+                                data-i18n="form_email_label"
                                 >E-mail</label
                             >
                             <input
@@ -1412,6 +1559,7 @@
                             <label
                                 for="message"
                                 class="block font-semibold text-gray-600"
+                                data-i18n="form_message_label"
                                 >Mensagem</label
                             >
                             <textarea
@@ -1434,6 +1582,7 @@
                         <button
                             type="submit"
                             class="block w-full rounded-md bg-violet-800 px-6 py-4 cursor-pointer text-center font-semibold text-gray-200 shadow-xs hover:bg-violet-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-800"
+                            data-i18n="form_submit"
                         >
                             Enviar mensagem
                         </button>
@@ -1448,7 +1597,9 @@
                 <div class="h-16 flex items-center justify-center">
                     <p class="text-sm text-gray-600 text-center">
                         &copy; <span id="currentYear"></span> Thiago Schoeffel.
-                        Todos os direitos reservados.
+                        <span data-i18n="footer_rights"
+                            >Todos os direitos reservados.</span
+                        >
                     </p>
                 </div>
             </div>
@@ -1469,6 +1620,7 @@
                 <button
                     id="closeModal"
                     aria-label="Fechar modal"
+                    data-i18n-aria-label="modal_close_aria"
                     class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/20 hover:bg-white/35 text-white text-lg flex items-center justify-center cursor-pointer transition-colors"
                 >
                     <svg
@@ -1499,6 +1651,7 @@
             <div
                 role="region"
                 aria-label="Galeria de capturas de tela"
+                data-i18n-aria-label="modal_gallery_aria"
                 class="relative w-full overflow-hidden bg-gray-900"
                 style="
                     aspect-ratio: 16/9;
@@ -1518,6 +1671,7 @@
                 <button
                     id="prevSlide"
                     aria-label="Slide anterior"
+                    data-i18n-aria-label="modal_prev_aria"
                     class="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/20 hover:bg-white/35 text-gray-800 flex items-center justify-center cursor-pointer transition-colors"
                 >
                     <svg
@@ -1536,6 +1690,7 @@
                 <button
                     id="nextSlide"
                     aria-label="Próximo slide"
+                    data-i18n-aria-label="modal_next_aria"
                     class="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/20 hover:bg-white/35 text-gray-800 flex items-center justify-center cursor-pointer transition-colors"
                 >
                     <svg
@@ -1556,6 +1711,7 @@
             <!-- Disclaimer -->
             <p
                 class="px-4 sm:px-8 py-5 text-xs text-gray-400 italic text-center"
+                data-i18n="modal_disclaimer"
             >
                 * Os dados e informações que aparecem nas imagens são apenas
                 para efeitos de demonstração e não condizem com a realidade.
@@ -1566,6 +1722,7 @@
                 <div class="px-4 sm:px-8 py-16">
                     <h3
                         class="text-3xl font-bold text-gray-600 tracking-tight mb-6"
+                        data-i18n="modal_why_heading"
                     >
                         Por quê foi desenvolvido?
                     </h3>
@@ -1577,6 +1734,7 @@
             <div class="px-4 sm:px-8 py-16">
                 <h3
                     class="text-3xl font-bold text-gray-600 tracking-tight mb-6"
+                    data-i18n="modal_tech_heading"
                 >
                     Tecnologias utilizadas
                 </h3>
@@ -1604,21 +1762,32 @@
                         anos--;
                         meses += 12;
                     }
+                    const t = window.I18N ? window.I18N.translations : {};
+                    const yr =
+                        anos === 1
+                            ? t.duration_year || "ano"
+                            : t.duration_years || "anos";
+                    const mo =
+                        meses === 1
+                            ? t.duration_month || "mês"
+                            : t.duration_months || "meses";
+                    const and = t.duration_and || "e";
+                    const lessThan =
+                        t.duration_less_than_month || "menos de 1 mês";
                     const partes = [];
-                    if (anos > 0)
-                        partes.push(anos + " " + (anos === 1 ? "ano" : "anos"));
-                    if (meses > 0)
-                        partes.push(
-                            meses + " " + (meses === 1 ? "mês" : "meses"),
-                        );
+                    if (anos > 0) partes.push(anos + " " + yr);
+                    if (meses > 0) partes.push(meses + " " + mo);
                     return partes.length
-                        ? partes.join(" e ")
-                        : "menos de 1 mês";
+                        ? partes.join(" " + and + " ")
+                        : lessThan;
                 }
-                const durationEl =
-                    document.getElementById("agrotools-duration");
-                if (durationEl)
-                    durationEl.textContent = calcDuration("25/03/2021");
+                window.updateDuration = function () {
+                    const durationEl =
+                        document.getElementById("agrotools-duration");
+                    if (durationEl)
+                        durationEl.textContent = calcDuration("25/03/2021");
+                };
+                window.updateDuration();
 
                 // --- Typing animation (respects prefers-reduced-motion) ---
                 const prefersReducedMotion = window.matchMedia(
@@ -1680,14 +1849,24 @@
                 function closeMenu() {
                     panel.classList.add("hidden");
                     btn.setAttribute("aria-expanded", "false");
-                    btn.setAttribute("aria-label", "Abrir menu");
+                    btn.setAttribute(
+                        "aria-label",
+                        window.I18N
+                            ? window.I18N.t("nav_open_menu") || "Abrir menu"
+                            : "Abrir menu",
+                    );
                     iconMenu.classList.remove("hidden");
                     iconClose.classList.add("hidden");
                 }
                 function openMenu() {
                     panel.classList.remove("hidden");
                     btn.setAttribute("aria-expanded", "true");
-                    btn.setAttribute("aria-label", "Fechar menu");
+                    btn.setAttribute(
+                        "aria-label",
+                        window.I18N
+                            ? window.I18N.t("nav_close_menu") || "Fechar menu"
+                            : "Fechar menu",
+                    );
                     iconMenu.classList.add("hidden");
                     iconClose.classList.remove("hidden");
                 }
@@ -1761,11 +1940,12 @@
                 contactForm.addEventListener("submit", (e) => {
                     if (contactForm.action.includes("YOUR_EMAIL")) {
                         e.preventDefault();
-                        document
-                            .getElementById("formError")
-                            .classList.remove("hidden");
-                        document.getElementById("formError").textContent =
-                            "Configure o endereço de e-mail no atributo action do formulário antes de enviar.";
+                        const errEl = document.getElementById("formError");
+                        errEl.classList.remove("hidden");
+                        errEl.textContent = window.I18N
+                            ? window.I18N.t("form_config_error") ||
+                              "Configure o endereço de e-mail no atributo action do formulário antes de enviar."
+                            : "Configure o endereço de e-mail no atributo action do formulário antes de enviar.";
                     }
                 });
 
@@ -1776,44 +1956,38 @@
                 const PROJECTS = {
                     "business-control": {
                         name: "Business Control",
-                        description:
-                            "Sistema para gerenciamento da produção de blocos e moldados de EPS (poliestireno expandido), com controle de paradas de máquina e movimentações de estoque.",
+                        descriptionKey: "project_bc_description",
                         gallery: [
                             {
                                 src: "images/projects/business-control/01.png",
-                                title: "Tela de login",
-                                subtitle:
-                                    "Tela de login do sistema Business Control.",
+                                titleKey: "project_bc_g1_title",
+                                subtitleKey: "project_bc_g1_subtitle",
                             },
                             {
                                 src: "images/projects/business-control/02.png",
-                                title: "Dashboard inicial",
-                                subtitle:
-                                    "Dashboard inicial com várias informações resumidas.",
+                                titleKey: "project_bc_g2_title",
+                                subtitleKey: "project_bc_g2_subtitle",
                             },
                             {
                                 src: "images/projects/business-control/03.png",
-                                title: "Dashboard com gráficos",
-                                subtitle:
-                                    "Vários gráficos com informações relevantes.",
+                                titleKey: "project_bc_g3_title",
+                                subtitleKey: "project_bc_g3_subtitle",
                             },
                             {
                                 src: "images/projects/business-control/04.png",
-                                title: "Dashboard com gráficos",
-                                subtitle:
-                                    "Vários gráficos com informações relevantes.",
+                                titleKey: "project_bc_g4_title",
+                                subtitleKey: "project_bc_g4_subtitle",
                             },
                             {
                                 src: "images/projects/business-control/05.png",
-                                title: "Gestão de apontamentos",
-                                subtitle:
-                                    "Tela de gestão dos apontamentos de produção.",
+                                titleKey: "project_bc_g5_title",
+                                subtitleKey: "project_bc_g5_subtitle",
                             },
                         ],
-                        why: [
-                            "O Business Control nasceu de uma necessidade operacional real. A empresa utilizava um ERP genérico, que não atendia às particularidades do processo de produção de blocos e moldados de EPS (poliestireno expandido). Os controles mais críticos — como registro de produção, paradas de máquina, lançamentos de estoque e movimentação interna — eram feitos manualmente em planilhas Excel.",
-                            "Esse modelo apresentava vários problemas: falta de rastreabilidade do que estava sendo produzido, dificuldade para enxergar o status atualizado do estoque e pouca visibilidade sobre a produção em andamento. Em outras palavras, a operação diária dependia de controles paralelos, descentralizados e sujeitos a erro humano.",
-                            "O Business Control foi desenvolvido para resolver exatamente isso: substituir o controle manual por um sistema próprio, alinhado ao fluxo real da fábrica. A aplicação passou a centralizar o acompanhamento da produção de blocos e moldados de EPS (poliestireno expandido), registrar movimentações de estoque de forma estruturada e oferecer uma visão clara do que foi produzido, do que está em produção e do que está disponível. Isso trouxe mais controle, mais confiabilidade nos dados e uma base sólida para tomada de decisão.",
+                        whyKeys: [
+                            "project_bc_why_1",
+                            "project_bc_why_2",
+                            "project_bc_why_3",
                         ],
                         technologies: [
                             ["PHP", "bg-purple-400 text-purple-900"],
@@ -1825,49 +1999,40 @@
                     },
                     "fast-delivery": {
                         name: "Fast Delivery",
-                        description:
-                            "Sistema de controle de pedidos e produção para uma empresa de refeições saudáveis. Inclui funcionalidades para gestão de cozinha, entregas, clientes, produtos e entregadores.",
+                        descriptionKey: "project_fd_description",
                         gallery: [
                             {
                                 src: "images/projects/fast-delivery/01.png",
-                                title: "Tela de login",
-                                subtitle:
-                                    "Tela de login do sistema Fast Delivery.",
+                                titleKey: "project_fd_g1_title",
+                                subtitleKey: "project_fd_g1_subtitle",
                             },
                             {
                                 src: "images/projects/fast-delivery/02.png",
-                                title: "Tela inicial",
-                                subtitle:
-                                    "Dashboard inicial com várias informações resumidas.",
+                                titleKey: "project_fd_g2_title",
+                                subtitleKey: "project_fd_g2_subtitle",
                             },
                             {
                                 src: "images/projects/fast-delivery/03.png",
-                                title: "Dashboard de produção",
-                                subtitle:
-                                    "Dashboard de produção com as quantidades que devem ser produzidas.",
+                                titleKey: "project_fd_g3_title",
+                                subtitleKey: "project_fd_g3_subtitle",
                             },
                             {
                                 src: "images/projects/fast-delivery/04.png",
-                                title: "Dashboard de embalagem",
-                                subtitle:
-                                    "Dashboard com as refeições prontas para serem embaladas separadas por entregador.",
+                                titleKey: "project_fd_g4_title",
+                                subtitleKey: "project_fd_g4_subtitle",
                             },
                             {
                                 src: "images/projects/fast-delivery/05.png",
-                                title: "Dashboard de entrega",
-                                subtitle:
-                                    "Dashboard com as entregas a serem realizadas por cada entregador com organização da sequência de entrega.",
+                                titleKey: "project_fd_g5_title",
+                                subtitleKey: "project_fd_g5_subtitle",
                             },
                             {
                                 src: "images/projects/fast-delivery/06.png",
-                                title: "Gestão de pedidos",
-                                subtitle: "Tela de gestão dos pedidos.",
+                                titleKey: "project_fd_g6_title",
+                                subtitleKey: "project_fd_g6_subtitle",
                             },
                         ],
-                        why: [
-                            "O Fast Delivery foi criado para atender às necessidades específicas de uma empresa de refeições saudáveis que buscava otimizar seu processo de pedidos e produção. Antes do desenvolvimento do sistema, a empresa enfrentava desafios significativos na gestão de pedidos, controle de produção e logística de entregas, o que impactava negativamente a eficiência operacional e a satisfação dos clientes.",
-                            "Com o Fast Delivery, a empresa conseguiu centralizar todas as operações em uma única plataforma. O sistema permite o gerenciamento eficiente dos pedidos, desde a recepção até a entrega, além de oferecer ferramentas para controlar a produção na cozinha, gerenciar o estoque de ingredientes e coordenar os entregadores. Isso resultou em uma melhoria significativa na organização interna, redução de erros e atrasos, e uma experiência mais satisfatória para os clientes.",
-                        ],
+                        whyKeys: ["project_fd_why_1", "project_fd_why_2"],
                         technologies: [
                             ["PHP", "bg-purple-400 text-purple-900"],
                             ["CodeIgniter 3", "bg-red-400 text-red-900"],
@@ -1878,38 +2043,30 @@
                     },
                     benefactors: {
                         name: "Benefactors",
-                        description:
-                            "Plataforma para gestão de benfeitores e suas contribuições a uma casa de formação religiosa. Controle completo de cadastros, doações e interações com os doadores.",
+                        descriptionKey: "project_bf_description",
                         gallery: [
                             {
                                 src: "images/projects/benefactors/01.png",
-                                title: "Login",
-                                subtitle:
-                                    "Tela de login do sistema Benefactors.",
+                                titleKey: "project_bf_g1_title",
+                                subtitleKey: "project_bf_g1_subtitle",
                             },
                             {
                                 src: "images/projects/benefactors/02.png",
-                                title: "Dashboard",
-                                subtitle:
-                                    "Dashboard inicial com várias informações resumidas.",
+                                titleKey: "project_bf_g2_title",
+                                subtitleKey: "project_bf_g2_subtitle",
                             },
                             {
                                 src: "images/projects/benefactors/03.png",
-                                title: "Gestão de benfeitores",
-                                subtitle:
-                                    "Gestão de cadastros dos benfeitores.",
+                                titleKey: "project_bf_g3_title",
+                                subtitleKey: "project_bf_g3_subtitle",
                             },
                             {
                                 src: "images/projects/benefactors/04.png",
-                                title: "Contribuições",
-                                subtitle:
-                                    "Gestão de contribuições dos benfeitores.",
+                                titleKey: "project_bf_g4_title",
+                                subtitleKey: "project_bf_g4_subtitle",
                             },
                         ],
-                        why: [
-                            "A plataforma Benefactors foi desenvolvida para atender às necessidades específicas de uma casa de formação religiosa que buscava aprimorar a gestão de seus benfeitores e suas contribuições. Antes da implementação do sistema, a instituição enfrentava desafios na organização dos cadastros dos benfeitores, no acompanhamento das doações e na manutenção de um relacionamento eficaz com os doadores.",
-                            "Com o Benefactors, a casa de formação religiosa conseguiu centralizar todas as informações relacionadas aos benfeitores em uma única plataforma. O sistema permite o gerenciamento eficiente dos cadastros, o registro detalhado das doações e a facilitação das interações com os doadores. Isso resultou em uma melhoria significativa na organização interna, maior transparência nas contribuições recebidas e um fortalecimento do vínculo entre a instituição e seus benfeitores.",
-                        ],
+                        whyKeys: ["project_bf_why_1", "project_bf_why_2"],
                         technologies: [
                             ["PHP", "bg-purple-400 text-purple-900"],
                             ["Laravel", "bg-orange-500 text-orange-900"],
@@ -1978,50 +2135,58 @@
                     if (!project) return;
 
                     modal.dataset.project = slug;
+                    const t = window.I18N
+                        ? window.I18N.t.bind(window.I18N)
+                        : () => "";
 
                     // Fill header
                     document.getElementById("modalName").textContent =
                         project.name;
                     document.getElementById("modalDescription").textContent =
-                        project.description;
+                        t(project.descriptionKey) || project.descriptionKey;
 
                     // Build slides
                     slideTrack.innerHTML = "";
                     totalSlides = project.gallery.length;
-                    project.gallery.forEach(({ src, title, subtitle }) => {
-                        const wrap = document.createElement("div");
-                        wrap.className = "relative flex-shrink-0 w-full h-full";
+                    project.gallery.forEach(
+                        ({ src, titleKey, subtitleKey }) => {
+                            const title = t(titleKey) || titleKey;
+                            const subtitle = t(subtitleKey) || subtitleKey;
+                            const wrap = document.createElement("div");
+                            wrap.className =
+                                "relative flex-shrink-0 w-full h-full";
 
-                        const img = document.createElement("img");
-                        img.src = src;
-                        img.alt = title;
-                        img.className =
-                            "absolute inset-0 w-full h-full object-cover";
+                            const img = document.createElement("img");
+                            img.src = src;
+                            img.alt = title;
+                            img.className =
+                                "absolute inset-0 w-full h-full object-cover";
 
-                        const label = document.createElement("div");
-                        label.className =
-                            "absolute z-10 bottom-3 left-3 right-3 rounded-md px-4 py-3";
-                        label.style.cssText =
-                            "background: linear-gradient(to bottom left, rgba(255,255,255,0.1), rgba(255,255,255,0.5)); backdrop-filter: blur(8px); border: 1px solid rgba(209,213,219,0.5);";
+                            const label = document.createElement("div");
+                            label.className =
+                                "absolute z-10 bottom-3 left-3 right-3 rounded-md px-4 py-3";
+                            label.style.cssText =
+                                "background: linear-gradient(to bottom left, rgba(255,255,255,0.1), rgba(255,255,255,0.5)); backdrop-filter: blur(8px); border: 1px solid rgba(209,213,219,0.5);";
 
-                        if (title) {
-                            const h2 = document.createElement("h2");
-                            h2.className =
-                                "text-gray-600 text-sm font-bold m-0";
-                            h2.textContent = title;
-                            label.appendChild(h2);
-                        }
-                        if (subtitle) {
-                            const p = document.createElement("p");
-                            p.className = "text-gray-600 text-xs m-0";
-                            p.textContent = subtitle;
-                            label.appendChild(p);
-                        }
+                            if (title) {
+                                const h2 = document.createElement("h2");
+                                h2.className =
+                                    "text-gray-600 text-sm font-bold m-0";
+                                h2.textContent = title;
+                                label.appendChild(h2);
+                            }
+                            if (subtitle) {
+                                const p = document.createElement("p");
+                                p.className = "text-gray-600 text-xs m-0";
+                                p.textContent = subtitle;
+                                label.appendChild(p);
+                            }
 
-                        wrap.appendChild(img);
-                        wrap.appendChild(label);
-                        slideTrack.appendChild(wrap);
-                    });
+                            wrap.appendChild(img);
+                            wrap.appendChild(label);
+                            slideTrack.appendChild(wrap);
+                        },
+                    );
 
                     // Reset to first slide
                     slideTrack.style.transition = "none";
@@ -2034,11 +2199,11 @@
                     // Fill why
                     const whyEl = document.getElementById("modalWhy");
                     whyEl.innerHTML = "";
-                    project.why.forEach((p) => {
+                    project.whyKeys.forEach((key) => {
                         const el = document.createElement("p");
                         el.className =
                             "leading-8 text-lg text-gray-600 tracking-tight";
-                        el.textContent = p;
+                        el.textContent = t(key) || key;
                         whyEl.appendChild(el);
                     });
 
@@ -2083,13 +2248,20 @@
                 const emailError = document.getElementById("email-error");
                 const messageError = document.getElementById("message-error");
 
-                // Validation error messages (Portuguese)
-                const ERRORS = {
-                    name: "Nome é obrigatório.",
-                    emailRequired: "E-mail é obrigatório.",
-                    emailInvalid: "E-mail inválido.",
-                    message: "Mensagem é obrigatória.",
-                };
+                // Validation error messages (i18n-aware)
+                function getErrors() {
+                    const t = window.I18N ? window.I18N.translations : {};
+                    return {
+                        name: t.error_name_required || "Nome é obrigatório.",
+                        emailRequired:
+                            t.error_email_required || "E-mail é obrigatório.",
+                        emailInvalid:
+                            t.error_email_invalid || "E-mail inválido.",
+                        message:
+                            t.error_message_required ||
+                            "Mensagem é obrigatória.",
+                    };
+                }
 
                 function showError(input, errorElem, message) {
                     errorElem.textContent = message;
@@ -2110,7 +2282,7 @@
 
                 function validateName() {
                     if (!nameInput.value.trim()) {
-                        showError(nameInput, nameError, ERRORS.name);
+                        showError(nameInput, nameError, getErrors().name);
                         return false;
                     }
                     hideError(nameInput, nameError);
@@ -2120,12 +2292,20 @@
                 function validateEmail() {
                     const value = emailInput.value.trim();
                     if (!value) {
-                        showError(emailInput, emailError, ERRORS.emailRequired);
+                        showError(
+                            emailInput,
+                            emailError,
+                            getErrors().emailRequired,
+                        );
                         return false;
                     }
                     const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
                     if (!valid) {
-                        showError(emailInput, emailError, ERRORS.emailInvalid);
+                        showError(
+                            emailInput,
+                            emailError,
+                            getErrors().emailInvalid,
+                        );
                         return false;
                     }
                     hideError(emailInput, emailError);
@@ -2134,7 +2314,11 @@
 
                 function validateMessage() {
                     if (!messageInput.value.trim()) {
-                        showError(messageInput, messageError, ERRORS.message);
+                        showError(
+                            messageInput,
+                            messageError,
+                            getErrors().message,
+                        );
                         return false;
                     }
                     hideError(messageInput, messageError);
@@ -2173,6 +2357,116 @@
                     }
                     return true;
                 });
+            })();
+        </script>
+        <!-- ===== i18n SYSTEM ===== -->
+        <script>
+            window.I18N = (() => {
+                const state = {
+                    currentLang: "pt-br",
+                    translations: {},
+                };
+
+                function t(key) {
+                    return state.translations[key] !== undefined
+                        ? state.translations[key]
+                        : "";
+                }
+
+                function applyTranslations() {
+                    // Text content
+                    document.querySelectorAll("[data-i18n]").forEach((el) => {
+                        const val = t(el.dataset.i18n);
+                        if (val) el.textContent = val;
+                    });
+
+                    // HTML content
+                    document
+                        .querySelectorAll("[data-i18n-html]")
+                        .forEach((el) => {
+                            const val = t(el.dataset.i18nHtml);
+                            if (val) el.innerHTML = val;
+                        });
+
+                    // aria-label attributes
+                    document
+                        .querySelectorAll("[data-i18n-aria-label]")
+                        .forEach((el) => {
+                            const val = t(el.dataset.i18nAriaLabel);
+                            if (val) el.setAttribute("aria-label", val);
+                        });
+                }
+
+                function updateToggleUI() {
+                    const ptBtn = document.getElementById("lang-pt-br");
+                    const enBtn = document.getElementById("lang-en-us");
+                    if (!ptBtn || !enBtn) return;
+                    const isPt = state.currentLang === "pt-br";
+
+                    ptBtn.classList.toggle("bg-violet-800", isPt);
+                    ptBtn.classList.toggle("text-white", isPt);
+                    ptBtn.classList.toggle("bg-gray-200", !isPt);
+                    ptBtn.classList.toggle("text-gray-600", !isPt);
+                    ptBtn.setAttribute("aria-pressed", String(isPt));
+
+                    enBtn.classList.toggle("bg-violet-800", !isPt);
+                    enBtn.classList.toggle("text-white", !isPt);
+                    enBtn.classList.toggle("bg-gray-200", isPt);
+                    enBtn.classList.toggle("text-gray-600", isPt);
+                    enBtn.setAttribute("aria-pressed", String(!isPt));
+                }
+
+                function updateHtmlLang() {
+                    document.documentElement.lang =
+                        state.currentLang === "pt-br" ? "pt-BR" : "en-US";
+                }
+
+                async function setLanguage(lang) {
+                    try {
+                        const resp = await fetch("i18n/" + lang + ".json");
+                        if (!resp.ok) throw new Error("HTTP " + resp.status);
+                        state.translations = await resp.json();
+                        state.currentLang = lang;
+                        localStorage.setItem("lang", lang);
+                        applyTranslations();
+                        updateToggleUI();
+                        updateHtmlLang();
+                        if (typeof window.updateDuration === "function") {
+                            window.updateDuration();
+                        }
+                    } catch (err) {
+                        console.warn(
+                            "[i18n] Could not load",
+                            lang + ":",
+                            err.message,
+                        );
+                        state.currentLang = lang;
+                        updateToggleUI();
+                    }
+                }
+
+                // Wire up toggle buttons
+                const ptBtn = document.getElementById("lang-pt-br");
+                const enBtn = document.getElementById("lang-en-us");
+                if (ptBtn)
+                    ptBtn.addEventListener("click", () => setLanguage("pt-br"));
+                if (enBtn)
+                    enBtn.addEventListener("click", () => setLanguage("en-us"));
+
+                // Initialize: load saved language
+                const saved = localStorage.getItem("lang") || "pt-br";
+                setLanguage(saved);
+
+                return {
+                    t,
+                    setLanguage,
+                    get currentLang() {
+                        return state.currentLang;
+                    },
+                    get translations() {
+                        return state.translations;
+                    },
+                };
             })();
         </script>
     </body>
