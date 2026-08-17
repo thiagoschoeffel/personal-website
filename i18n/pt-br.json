@@ -65,6 +65,8 @@
   "bc_description": "Sistema para gerenciamento da produção de blocos e moldados de EPS (poliestireno expandido), com controle de paradas de máquina e movimentações de estoque.",
   "fd_description": "Sistema de controle de pedidos e produção para uma empresa de refeições saudáveis. Inclui funcionalidades para gestão de cozinha, entregas, clientes, produtos e entregadores.",
   "bf_description": "Plataforma para gestão de benfeitores e suas contribuições a uma casa de formação religiosa. Controle completo de cadastros, doações e interações com os doadores.",
+  "wi_description": "Site institucional da Isoplac Industrial, com soluções em EPS para a construção civil e foco em blocos para lajes.",
+  "wi_type": "Website institucional",
 
   "education_heading": "Educação",
   "udesc_degree": "Bacharelado em Sistemas de Informação <strong>(não concluído)</strong>",
@@ -153,5 +155,17 @@
   "project_bf_g4_title": "Contribuições",
   "project_bf_g4_subtitle": "Gestão de contribuições dos benfeitores.",
   "project_bf_why_1": "A plataforma Benefactors foi desenvolvida para atender às necessidades específicas de uma casa de formação religiosa que buscava aprimorar a gestão de seus benfeitores e suas contribuições. Antes da implementação do sistema, a instituição enfrentava desafios na organização dos cadastros dos benfeitores, no acompanhamento das doações e na manutenção de um relacionamento eficaz com os doadores.",
-  "project_bf_why_2": "Com o Benefactors, a casa de formação religiosa conseguiu centralizar todas as informações relacionadas aos benfeitores em uma única plataforma. O sistema permite o gerenciamento eficiente dos cadastros, o registro detalhado das doações e a facilitação das interações com os doadores. Isso resultou em uma melhoria significativa na organização interna, maior transparência nas contribuições recebidas e um fortalecimento do vínculo entre a instituição e seus benfeitores."
+  "project_bf_why_2": "Com o Benefactors, a casa de formação religiosa conseguiu centralizar todas as informações relacionadas aos benfeitores em uma única plataforma. O sistema permite o gerenciamento eficiente dos cadastros, o registro detalhado das doações e a facilitação das interações com os doadores. Isso resultou em uma melhoria significativa na organização interna, maior transparência nas contribuições recebidas e um fortalecimento do vínculo entre a instituição e seus benfeitores.",
+
+  "project_wi_description": "Site institucional da Isoplac Industrial, empresa com mais de 25 anos de experiência na transformação de EPS (Isopor®) para a construção civil. A plataforma apresenta as soluções da empresa, com foco em blocos para lajes e benefícios como leveza, isolamento, economia e praticidade na obra.",
+  "project_wi_g1_title": "Página inicial",
+  "project_wi_g1_subtitle": "Apresentação das soluções em EPS para construção civil.",
+  "project_wi_g2_title": "Sistema de gestão da qualidade",
+  "project_wi_g2_subtitle": "Destaque para os processos e compromissos de qualidade da Isoplac.",
+  "project_wi_g3_title": "O que é EPS?",
+  "project_wi_g3_subtitle": "Conteúdo informativo sobre o EPS e suas aplicações.",
+  "project_wi_g4_title": "Contato e unidades",
+  "project_wi_g4_subtitle": "Canais de contato e localização das unidades da empresa.",
+  "project_wi_why_1": "O site da Isoplac foi desenvolvido para fortalecer a presença digital da empresa e tornar mais acessíveis as informações sobre suas soluções em EPS para a construção civil. Antes, clientes e profissionais do setor tinham menos recursos centralizados para conhecer os produtos, entender as vantagens do EPS, localizar unidades e entrar em contato com a empresa.",
+  "project_wi_why_2": "A plataforma reúne essas informações de forma clara, moderna e responsiva, facilitando o atendimento e apoiando a decisão de quem busca soluções mais leves, eficientes e econômicas para obras. Além de apresentar a história, os valores e a estrutura da Isoplac, o site oferece conteúdo sobre a aplicação do EPS em lajes, canais de contato e localização das unidades, ampliando a visibilidade da empresa e reforçando seu posicionamento como referência no setor."
 }

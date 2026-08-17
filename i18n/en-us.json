@@ -65,6 +65,8 @@
   "bc_description": "System for managing the production of EPS (expanded polystyrene) blocks and molded pieces, with machine downtime tracking and inventory movement control.",
   "fd_description": "Order and production management system for a healthy meals company. Includes features for kitchen management, deliveries, customers, products, and delivery drivers.",
   "bf_description": "Platform for managing benefactors and their contributions to a religious formation house. Complete control of registrations, donations, and interactions with donors.",
+  "wi_description": "Institutional website for Isoplac Industrial, featuring EPS solutions for civil construction with a focus on slab blocks.",
+  "wi_type": "Institutional website",
 
   "education_heading": "Education",
   "udesc_degree": "Bachelor's in Information Systems <strong>(incomplete)</strong>",
@@ -153,5 +155,17 @@
   "project_bf_g4_title": "Contributions",
   "project_bf_g4_subtitle": "Benefactor contribution management.",
   "project_bf_why_1": "The Benefactors platform was developed to meet the specific needs of a religious formation house seeking to improve the management of its benefactors and their contributions. Before the system was implemented, the institution faced challenges in organizing benefactor records, tracking donations, and maintaining effective relationships with donors.",
-  "project_bf_why_2": "With Benefactors, the religious formation house was able to centralize all benefactor-related information on a single platform. The system enables efficient record management, detailed donation tracking, and easier interactions with donors. This resulted in a significant improvement in internal organization, greater transparency in received contributions, and a strengthened bond between the institution and its benefactors."
+  "project_bf_why_2": "With Benefactors, the religious formation house was able to centralize all benefactor-related information on a single platform. The system enables efficient record management, detailed donation tracking, and easier interactions with donors. This resulted in a significant improvement in internal organization, greater transparency in received contributions, and a strengthened bond between the institution and its benefactors.",
+
+  "project_wi_description": "Institutional website for Isoplac Industrial, a company with more than 25 years of experience transforming EPS (expanded polystyrene) for civil construction. The platform presents the company's solutions, focusing on slab blocks and benefits such as lightness, insulation, cost savings, and practicality on the job site.",
+  "project_wi_g1_title": "Home page",
+  "project_wi_g1_subtitle": "Presentation of EPS solutions for civil construction.",
+  "project_wi_g2_title": "Quality management system",
+  "project_wi_g2_subtitle": "Highlights Isoplac's quality processes and commitments.",
+  "project_wi_g3_title": "What is EPS?",
+  "project_wi_g3_subtitle": "Informational content about EPS and its applications.",
+  "project_wi_g4_title": "Contact and locations",
+  "project_wi_g4_subtitle": "Contact channels and the company's unit locations.",
+  "project_wi_why_1": "The Isoplac website was developed to strengthen the company's digital presence and make information about its EPS solutions for civil construction more accessible. Previously, customers and industry professionals had fewer centralized resources to learn about the products, understand the advantages of EPS, locate facilities, and contact the company.",
+  "project_wi_why_2": "The platform brings this information together in a clear, modern, responsive experience, making service easier and supporting decisions for those seeking lighter, more efficient, and more economical construction solutions. In addition to presenting Isoplac's history, values, and structure, the site provides content about EPS applications in slabs, contact channels, and unit locations, increasing visibility and reinforcing the company's position as a sector reference."
 }
