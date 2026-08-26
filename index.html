@@ -669,6 +669,18 @@
                   ambientes distribuídos, garantindo escalabilidade e
                   consistência no ambiente de execução.
                 </li>
+                <li
+                  class="leading-8 text-gray-200 tracking-tight"
+                  data-i18n-html="agrotools_bullet_7"
+                >
+                  Uso do
+                  <span class="border-b-4 border-purple-900">Claude Code</span>
+                  com o
+                  <span class="border-b-4 border-purple-900">BMAD Method</span>
+                  para apoiar o desenvolvimento orientado por agentes,
+                  estruturando as etapas de planejamento, implementação e
+                  revisão de software.
+                </li>
               </ul>
               <p
                 class="leading-8 text-gray-200 tracking-tight"
@@ -1066,6 +1078,115 @@
             sob demanda, com foco em qualidade, usabilidade e entrega ágil.
           </p>
           <div class="md:grid md:grid-cols-2 md:gap-12">
+            <!-- Rei dos Palpites -->
+            <article class="mb-12">
+              <h3 class="mb-2">
+                <button
+                  data-open-modal="king-of-predictions"
+                  class="font-bold text-2xl text-gray-600 tracking-tight hover:text-violet-800 hover:underline underline-offset-4 cursor-pointer transition-colors"
+                >
+                  Rei dos Palpites
+                </button>
+              </h3>
+              <p
+                class="font-light text-sm text-gray-500 tracking-tight mb-2 leading-8"
+              >
+                ~240h | Skills:
+                <mark
+                  class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-purple-400 text-purple-900"
+                  >PHP</mark
+                >
+                <mark
+                  class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-orange-500 text-orange-900"
+                  >Laravel</mark
+                >
+                <mark
+                  class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-green-400 text-green-900"
+                  >Vue 3</mark
+                >
+                <mark
+                  class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-blue-400 text-blue-900"
+                  >TypeScript</mark
+                >
+                <mark
+                  class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-violet-300 text-violet-700"
+                  >Inertia.js</mark
+                >
+                <mark
+                  class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-yellow-300 text-yellow-900"
+                  >JavaScript</mark
+                >
+                <mark
+                  class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-red-300 text-red-900"
+                  >HTML</mark
+                >
+                <mark
+                  class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-indigo-300 text-indigo-900"
+                  >CSS</mark
+                >
+                <mark
+                  class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-cyan-300 text-cyan-900"
+                  >Tailwind CSS</mark
+                >
+                <mark
+                  class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-violet-300 text-violet-700"
+                  >Vite</mark
+                >
+                <mark
+                  class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-green-300 text-green-900"
+                  >Node.js</mark
+                >
+                <mark
+                  class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-blue-300 text-blue-900"
+                  >OAuth Google</mark
+                >
+                <mark
+                  class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-sky-300 text-sky-900"
+                  >PostgreSQL</mark
+                >
+                <mark
+                  class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-red-400 text-red-900"
+                  >Redis</mark
+                >
+                <mark
+                  class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-blue-300 text-blue-900"
+                  >Resend</mark
+                >
+                <mark
+                  class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-indigo-300 text-indigo-900"
+                  >Stripe</mark
+                >
+                <mark
+                  class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-red-300 text-red-900"
+                  >Sentry</mark
+                >
+                <mark
+                  class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-blue-400 text-blue-900"
+                  >Meta Pixel</mark
+                >
+                <mark
+                  class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-orange-300 text-orange-900"
+                  >Google Analytics</mark
+                >
+                <mark
+                  class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-amber-300 text-amber-900"
+                  >Cloudflare</mark
+                >
+                <mark
+                  class="inline-block py-0 px-3 rounded-full font-semibold mb-2 bg-purple-300 text-purple-900"
+                  >PHPUnit</mark
+                >
+              </p>
+              <p
+                class="text-gray-600 tracking-tight leading-8"
+                data-i18n="kp_description"
+              >
+                Plataforma de bolões e palpites em partidas de futebol. Inclui
+                gestão de campeonatos, rankings, grupos, pagamentos,
+                notificações e painel administrativo.
+              </p>
+            </article>
+
             <!-- Business Control -->
             <article class="mb-12">
               <h3 class="mb-2">
@@ -1628,6 +1749,7 @@
 
       <!-- Gallery: carousel -->
       <div
+        id="modalGallery"
         role="region"
         aria-label="Galeria de capturas de tela"
         data-i18n-aria-label="modal_gallery_aria"
@@ -1686,6 +1808,7 @@
 
       <!-- Disclaimer -->
       <p
+        id="modalDisclaimer"
         class="px-4 sm:px-8 py-5 text-xs text-gray-400 italic text-center"
         data-i18n="modal_disclaimer"
       >
@@ -1700,7 +1823,7 @@
             class="text-3xl font-bold text-gray-600 tracking-tight mb-6"
             data-i18n="modal_why_heading"
           >
-            Por quê foi desenvolvido?
+            Por que foi desenvolvido?
           </h3>
           <div id="modalWhy" class="space-y-4"></div>
         </div>
@@ -1919,6 +2042,61 @@
         // =========================================================
 
         const PROJECTS = {
+          "king-of-predictions": {
+            name: "Rei dos Palpites",
+            descriptionKey: "project_kp_description",
+            gallery: [
+              {
+                src: "images/projects/king-of-predictions/01.png",
+                titleKey: "project_kp_g1_title",
+                subtitleKey: "project_kp_g1_subtitle",
+              },
+              {
+                src: "images/projects/king-of-predictions/02.png",
+                titleKey: "project_kp_g2_title",
+                subtitleKey: "project_kp_g2_subtitle",
+              },
+              {
+                src: "images/projects/king-of-predictions/03.png",
+                titleKey: "project_kp_g3_title",
+                subtitleKey: "project_kp_g3_subtitle",
+              },
+              {
+                src: "images/projects/king-of-predictions/04.png",
+                titleKey: "project_kp_g4_title",
+                subtitleKey: "project_kp_g4_subtitle",
+              },
+              {
+                src: "images/projects/king-of-predictions/05.png",
+                titleKey: "project_kp_g5_title",
+                subtitleKey: "project_kp_g5_subtitle",
+              },
+            ],
+            whyKeys: ["project_kp_why_1", "project_kp_why_2"],
+            technologies: [
+              ["PHP", "bg-purple-400 text-purple-900"],
+              ["Laravel", "bg-orange-500 text-orange-900"],
+              ["Vue 3", "bg-green-400 text-green-900"],
+              ["TypeScript", "bg-blue-400 text-blue-900"],
+              ["Inertia.js", "bg-violet-300 text-violet-700"],
+              ["JavaScript", "bg-yellow-300 text-yellow-900"],
+              ["HTML", "bg-red-300 text-red-900"],
+              ["CSS", "bg-indigo-300 text-indigo-900"],
+              ["Tailwind CSS", "bg-cyan-300 text-cyan-900"],
+              ["Vite", "bg-violet-300 text-violet-700"],
+              ["Node.js", "bg-green-300 text-green-900"],
+              ["OAuth Google", "bg-blue-300 text-blue-900"],
+              ["PostgreSQL", "bg-sky-300 text-sky-900"],
+              ["Redis", "bg-red-400 text-red-900"],
+              ["Resend", "bg-blue-300 text-blue-900"],
+              ["Stripe", "bg-indigo-300 text-indigo-900"],
+              ["Sentry", "bg-red-300 text-red-900"],
+              ["Meta Pixel", "bg-blue-400 text-blue-900"],
+              ["Google Analytics", "bg-orange-300 text-orange-900"],
+              ["Cloudflare", "bg-amber-300 text-amber-900"],
+              ["PHPUnit", "bg-purple-300 text-purple-900"],
+            ],
+          },
           "business-control": {
             name: "Business Control",
             descriptionKey: "project_bc_description",
@@ -2084,6 +2262,8 @@
         // --- Carousel state ---
         const modal = document.getElementById("projectModal");
         const closeBtn = document.getElementById("closeModal");
+        const galleryEl = document.getElementById("modalGallery");
+        const disclaimerEl = document.getElementById("modalDisclaimer");
         const slideTrack = document.getElementById("modalSlideTrack");
         const prevBtn = document.getElementById("prevSlide");
         const nextBtn = document.getElementById("nextSlide");
@@ -2092,6 +2272,7 @@
         let totalSlides = 0;
 
         function goToSlide(n) {
+          if (!totalSlides) return;
           currentSlide = (n + totalSlides) % totalSlides;
           slideTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
         }
@@ -2143,6 +2324,9 @@
           // Build slides
           slideTrack.innerHTML = "";
           totalSlides = project.gallery.length;
+          const hasGallery = totalSlides > 0;
+          galleryEl.classList.toggle("hidden", !hasGallery);
+          disclaimerEl.classList.toggle("hidden", !hasGallery);
           project.gallery.forEach(({ src, titleKey, subtitleKey }) => {
             const title = t(titleKey) || titleKey;
             const subtitle = t(subtitleKey) || subtitleKey;

@@ -25,6 +25,7 @@
   "agrotools_bullet_4": "Construção e manutenção de rotinas com <span class=\"border-b-4 border-purple-900\">Azure LogicApps</span>, integrando processos e serviços;",
   "agrotools_bullet_5": "Uso extensivo de <span class=\"border-b-4 border-purple-900\">PostgreSQL</span> com extensão <span class=\"border-b-4 border-purple-900\">PostGIS</span> para manipulação de dados geoespaciais aplicados a análises territoriais;",
   "agrotools_bullet_6": "Atuação com <span class=\"border-b-4 border-purple-900\">Docker</span> e <span class=\"border-b-4 border-purple-900\">Kubernetes</span> para criação, empacotamento e orquestração de containers em ambientes distribuídos, garantindo escalabilidade e consistência no ambiente de execução.",
+  "agrotools_bullet_7": "Uso do <span class=\"border-b-4 border-purple-900\">Claude Code</span> com o <span class=\"border-b-4 border-purple-900\">BMAD Method</span> para apoiar o desenvolvimento orientado por agentes, estruturando as etapas de planejamento, implementação e revisão de software.",
   "agrotools_summary": "Essa experiência tem reforçado minha atuação como desenvolvedor full stack em projetos com forte presença de dados geoespaciais, automação, cloud computing e microsserviços.",
 
   "sardo_title": "Analista e Desenvolvedor de Sistemas",
@@ -62,6 +63,7 @@
   "freelance_heading": "Serviços como consultor independente",
   "freelance_intro": "Atuei em diversos projetos na modalidade freelance, desenvolvendo soluções personalizadas para parceiros e pequenos negócios. Os trabalhos incluíram desde websites institucionais até sistemas web sob demanda, com foco em qualidade, usabilidade e entrega ágil.",
 
+  "kp_description": "Plataforma de bolões e palpites em partidas de futebol. Inclui gestão de campeonatos, rankings, grupos, pagamentos, notificações e painel administrativo.",
   "bc_description": "Sistema para gerenciamento da produção de blocos e moldados de EPS (poliestireno expandido), com controle de paradas de máquina e movimentações de estoque.",
   "fd_description": "Sistema de controle de pedidos e produção para uma empresa de refeições saudáveis. Inclui funcionalidades para gestão de cozinha, entregas, clientes, produtos e entregadores.",
   "bf_description": "Plataforma para gestão de benfeitores e suas contribuições a uma casa de formação religiosa. Controle completo de cadastros, doações e interações com os doadores.",
@@ -98,7 +100,7 @@
   "modal_prev_aria": "Slide anterior",
   "modal_next_aria": "Próximo slide",
   "modal_disclaimer": "* Os dados e informações que aparecem nas imagens são apenas para efeitos de demonstração e não condizem com a realidade.",
-  "modal_why_heading": "Por quê foi desenvolvido?",
+  "modal_why_heading": "Por que foi desenvolvido?",
   "modal_tech_heading": "Tecnologias utilizadas",
 
   "duration_year": "ano",
@@ -112,6 +114,20 @@
   "error_email_required": "E-mail é obrigatório.",
   "error_email_invalid": "E-mail inválido.",
   "error_message_required": "Mensagem é obrigatória.",
+
+  "project_kp_description": "Plataforma de bolões e palpites em partidas de futebol. Inclui gestão de campeonatos, rankings, grupos, pagamentos, notificações e painel administrativo.",
+  "project_kp_g1_title": "Página inicial",
+  "project_kp_g1_subtitle": "Apresentação da plataforma e de sua proposta para criação de bolões online.",
+  "project_kp_g2_title": "Tela de login",
+  "project_kp_g2_subtitle": "Acesso à plataforma com e-mail e senha ou autenticação pelo Google.",
+  "project_kp_g3_title": "Dashboard inicial",
+  "project_kp_g3_subtitle": "Visão geral de jogos para palpitar, palpites pendentes, bolões ativos e próximos prazos.",
+  "project_kp_g4_title": "Gestão de bolões",
+  "project_kp_g4_subtitle": "Área para criar ou acessar bolões, acompanhar rankings e visualizar o desempenho dos palpites.",
+  "project_kp_g5_title": "Criação de bolão",
+  "project_kp_g5_subtitle": "Configuração de campeonato, jogos e regras de pontuação para um novo bolão.",
+  "project_kp_why_1": "O Rei dos Palpites foi desenvolvido para oferecer uma experiência simples e organizada na criação de bolões e palpites em partidas de futebol, centralizando campeonatos, rankings, grupos e pagamentos em uma única plataforma.",
+  "project_kp_why_2": "O projeto também surgiu como uma iniciativa de aprendizado e evolução técnica, servindo como ambiente prático para explorar tecnologias modernas, boas práticas de desenvolvimento, arquitetura de software, testes automatizados, integrações externas e publicação de uma aplicação real em produção.",
 
   "project_bc_description": "Sistema para gerenciamento da produção de blocos e moldados de EPS (poliestireno expandido), com controle de paradas de máquina e movimentações de estoque.",
   "project_bc_g1_title": "Tela de login",

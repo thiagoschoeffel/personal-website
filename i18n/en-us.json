@@ -25,6 +25,7 @@
   "agrotools_bullet_4": "Building and maintaining routines with <span class=\"border-b-4 border-purple-900\">Azure LogicApps</span>, integrating processes and services;",
   "agrotools_bullet_5": "Extensive use of <span class=\"border-b-4 border-purple-900\">PostgreSQL</span> with the <span class=\"border-b-4 border-purple-900\">PostGIS</span> extension for geospatial data manipulation applied to territorial analysis;",
   "agrotools_bullet_6": "Working with <span class=\"border-b-4 border-purple-900\">Docker</span> and <span class=\"border-b-4 border-purple-900\">Kubernetes</span> for container creation, packaging, and orchestration in distributed environments, ensuring scalability and consistency in the runtime environment.",
+  "agrotools_bullet_7": "Using <span class=\"border-b-4 border-purple-900\">Claude Code</span> with the <span class=\"border-b-4 border-purple-900\">BMAD Method</span> to support agent-driven development, structuring the software planning, implementation, and review stages.",
   "agrotools_summary": "This experience has reinforced my role as a full-stack developer in projects with a strong presence of geospatial data, automation, cloud computing, and microservices.",
 
   "sardo_title": "Systems Analyst and Developer",
@@ -62,6 +63,7 @@
   "freelance_heading": "Services as an Independent Consultant",
   "freelance_intro": "I worked on various freelance projects, developing customized solutions for partners and small businesses. The work ranged from institutional websites to on-demand web systems, with a focus on quality, usability, and agile delivery.",
 
+  "kp_description": "A platform for football pools and match predictions. It includes championship, ranking, group, payment, notification, and admin panel management.",
   "bc_description": "System for managing the production of EPS (expanded polystyrene) blocks and molded pieces, with machine downtime tracking and inventory movement control.",
   "fd_description": "Order and production management system for a healthy meals company. Includes features for kitchen management, deliveries, customers, products, and delivery drivers.",
   "bf_description": "Platform for managing benefactors and their contributions to a religious formation house. Complete control of registrations, donations, and interactions with donors.",
@@ -112,6 +114,20 @@
   "error_email_required": "E-mail is required.",
   "error_email_invalid": "Invalid e-mail.",
   "error_message_required": "Message is required.",
+
+  "project_kp_description": "A platform for football pools and match predictions. It includes championship, ranking, group, payment, notification, and admin panel management.",
+  "project_kp_g1_title": "Home page",
+  "project_kp_g1_subtitle": "An introduction to the platform and its approach to creating online football pools.",
+  "project_kp_g2_title": "Login screen",
+  "project_kp_g2_subtitle": "Platform access using e-mail and password or Google authentication.",
+  "project_kp_g3_title": "Home dashboard",
+  "project_kp_g3_subtitle": "An overview of matches open for predictions, pending predictions, active pools, and upcoming deadlines.",
+  "project_kp_g4_title": "Football pool management",
+  "project_kp_g4_subtitle": "An area for creating or joining pools, following rankings, and viewing prediction performance.",
+  "project_kp_g5_title": "Football pool creation",
+  "project_kp_g5_subtitle": "Championship, match, and scoring rule configuration for a new football pool.",
+  "project_kp_why_1": "Rei dos Palpites was developed to offer a simple and organized experience for creating football pools and match predictions, centralizing championships, rankings, groups, and payments on a single platform.",
+  "project_kp_why_2": "The project also began as a learning and technical development initiative, serving as a practical environment for exploring modern technologies, development best practices, software architecture, automated testing, external integrations, and the deployment of a real application to production.",
 
   "project_bc_description": "System for managing the production of EPS (expanded polystyrene) blocks and molded pieces, with machine downtime tracking and inventory movement control.",
   "project_bc_g1_title": "Login screen",
